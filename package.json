@@ -4,7 +4,11 @@
   "description": "my resume for junior qa",
   "main": "index.js",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kassiopea/resume"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
@@ -34,5 +38,5 @@
   },
   "keywords": [],
   "author": "Anastasia Salikova",
-  "license": "ISC"  
+  "license": "ISC"
 }
