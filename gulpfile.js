@@ -121,23 +121,6 @@ gulp.task("serve-mob", function(){
 
 //стартуем! и запускаем последовательно таски
 
-// gulp.task('build', gulp.series("clean", "copy", "style", "sprite", "vendor", "html", function (done) {
-//     done();
-// }));
-
 gulp.task('build', gulp.series("clean", "copy", "images", "sprite", "style", "html", function (done) {
     done();
 }));
-
-//только для версии ниже 4
-// gulp.task("build", function(done){
-// 	run(
-// 		"clean",
-// 		"copy",
-// 		"style",
-// 		"sprite",
-//     "vendor",
-// 		"html",
-// 		done
-// 	);
-// });
