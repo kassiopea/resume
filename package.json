@@ -36,7 +36,9 @@
     "start": "npm run build && gulp serve",
     "start-mobile": "npm run build && gulp serve-mob"
   },
-  "keywords": [],
+  "keywords": [
+    "resume"
+  ],
   "author": "Anastasia Salikova",
   "license": "ISC"
 }

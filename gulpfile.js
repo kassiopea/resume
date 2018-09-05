@@ -16,22 +16,43 @@ var uglify = require('gulp-uglify'); //yes
 var run = require("run-sequence"); //yes
 var del = require("del"); //yes
 var broSync = require("browser-sync").create();//yes
-// var currentBuild = "build";
 
 // удаление папки с билдом, для перезаписи в нее итоговых файлов
 gulp.task("clean", function(){
-	return del("build");
+	return del("build")
 });
+
 
 // копирование шрифтов, картинок из папки с ресурсами в папку билд
 gulp.task("copy", function(){
 	return gulp.src([
-		"source/fonts/**/*.{woff,woff2}",
+		"source/fonts/**/*.{woff,woff2,ttf,svg}",
 		"source/images/**"
 	], {
 		base: "source"
 	})
-	.pipe(gulp.dest("build"))
+	.pipe(gulp.dest("build/"))
+});
+
+//минифицируем изображения
+gulp.task("images", function(){
+	return gulp.src("build/images/*.{jpg, png, svg}")
+	.pipe(imagemin([
+		imagemin.optipng({optimizationLevel: 3}),
+		imagemin.jpegtran({pogressive: true}),
+		imagemin.svgo()
+	]))
+	.pipe(gulp.dest("build/images"))
+});
+
+// создание svg спрайтов, переименование и упаковка в папку билд
+gulp.task("sprite", function(){
+	return gulp.src("build/images/icon-*.svg")
+	.pipe(svgstore({
+		inlineSvg: true
+	}))
+	.pipe(rename("sprite.svg"))
+	.pipe(gulp.dest("build/images/sprites"));
 });
 
 // относительно стилей... при работе с less файлом убираем дефолтный обработчик ошибок и ставим plumber
@@ -42,12 +63,10 @@ gulp.task("copy", function(){
 // минифицированный файл переименовываем  и сохраняем в билде
 // используем живую перезагрузку
 gulp.task("style", function(){
-	gulp.src("source/less/style.less")
+	return gulp.src("source/less/style.less")
 	.pipe(plumber())
 	.pipe(less())
-	.pipe(postcss([
-			autoprefixer()
-		]))
+	.pipe(postcss([autoprefixer()]))
 	.pipe(gulp.dest("build/css"))
 	.pipe(mini())
 	.pipe(rename("style.min.css"))
@@ -55,26 +74,6 @@ gulp.task("style", function(){
 	.pipe(broSync.stream());
 });
 
-//минифицируем изображения
-gulp.task("images", function(){
-	return gulp.src("source/images/**/*.{jpg, png, svg}")
-	.pipe(imagemin([
-		imagemin.optipng({optimizationLevel: 3}),
-		imagemin.jpegtran({pogressive: true}),
-		imagemin.svgo()
-	]))
-	.pipe(gulp.dest("source/images"))
-});
-
-//создание svg спрайтов, переименование и упаковка в папку билд
-gulp.task("sprite", function(){
-	return gulp.src("source/images/icon-*.svg")
-	.pipe(svgstore({
-		inlineSvg: true
-	}))
-	.pipe(rename("sprite.svg"))
-	.pipe(gulp.dest("build/images"));
-});
 
 //с помощью posthtml вставляем include на страницу (чтобы вставить svg спрайты инлайн)
 //удаляем комментарии в файле html
@@ -89,16 +88,16 @@ gulp.task("html", function(){
 		.on("change", broSync.reload);
 });
 
-//собираем все файлы js в один и минифицируем
-gulp.task('vendor', function() {
-    return gulp.src('source/js/*.js')
-        .pipe(concat('vendor.js'))
-        .pipe(gulp.dest('build/js/vendor.js'))
-        .pipe(uglify())
-        .pipe(rename('vendor.min.js'))
-        .pipe(gulp.dest('build/vendor.js'))
-        .on('error', gutil.log)
-});
+// собираем все файлы js в один и минифицируем
+// gulp.task('vendor', function() {
+//     return gulp.src('source/js/*.js')
+//         .pipe(concat('vendor.js'))
+//         .pipe(gulp.dest('build/js/vendor.js'))
+//         .pipe(uglify())
+//         .pipe(rename('vendor.min.js'))
+//         .pipe(gulp.dest('build/vendor.js'))
+//         .on('error', gutil.log)
+// });
 
 //инициируем сервер из папки билд и смотрим на изменеия less и html
 gulp.task("serve", function(){
@@ -106,8 +105,8 @@ gulp.task("serve", function(){
 		server: "build/"
 	});
 
-	gulp.watch("source/less/**/*.less", ["style"]);
-	gulp.watch("source/*.html", ["html"]);
+	gulp.watch("source/less/**/*.less", gulp.series("style"));
+	gulp.watch("source/*.html", gulp.series("html"));
 });
 
 // инициируем сервер для тестирования на мобильных устройствах
@@ -121,14 +120,24 @@ gulp.task("serve-mob", function(){
 });
 
 //стартуем! и запускаем последовательно таски
-gulp.task("build", function(done){
-	run(
-		"clean",
-		"copy",
-		"style",
-		"sprite",
-    "vendor",
-		"html",
-		done
-	);
-});
+
+// gulp.task('build', gulp.series("clean", "copy", "style", "sprite", "vendor", "html", function (done) {
+//     done();
+// }));
+
+gulp.task('build', gulp.series("clean", "copy", "images", "sprite", "style", "html", function (done) {
+    done();
+}));
+
+//только для версии ниже 4
+// gulp.task("build", function(done){
+// 	run(
+// 		"clean",
+// 		"copy",
+// 		"style",
+// 		"sprite",
+//     "vendor",
+// 		"html",
+// 		done
+// 	);
+// });
