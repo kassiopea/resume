@@ -28,10 +28,11 @@ gulp.task("copy", function(){
 	return gulp.src([
 		"source/fonts/**/*.{woff,woff2,ttf,svg}",
 		"source/images/**"
+		// "source/js/**"
 	], {
 		base: "source"
 	})
-	.pipe(gulp.dest("build/"))
+	.pipe(gulp.dest("build"))
 });
 
 //минифицируем изображения
@@ -52,7 +53,7 @@ gulp.task("sprite", function(){
 		inlineSvg: true
 	}))
 	.pipe(rename("sprite.svg"))
-	.pipe(gulp.dest("build/images/sprites"));
+	.pipe(gulp.dest("build/images"));
 });
 
 // относительно стилей... при работе с less файлом убираем дефолтный обработчик ошибок и ставим plumber
