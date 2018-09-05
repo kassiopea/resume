@@ -1,17 +1,170 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-  <head>
-    <meta charset="utf-8">
-    <link rel=’preload href=’/css/style.min.css’ as=’style’>
-    <link rel=’preload href=’/fonts/PTC.woff2’ as=’font’>
-    <link rel="icon" href="images/browser-icon.png" type="image/x-icon">
-    <title>Саликова Анастасия. Младший тестировщик</title>
-    <meta name="author" content="Anastasia Salikova">
-  	<meta name="description" content="Страничка ввиде резюме на должность младшего тестировщика">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
-  </head>
-  <body>
-    <h1>Resume Salikova Anastasia</h1>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <link rel=’preload href=’/css/style.min.css’ as=’style’>
+        <link rel=’preload href=’/fonts/spectral-sc-v2-cyrillic_latin-regular.woff2’ as=’font’>
+        <link rel="icon" href="images/browser-icon.png" type="image/x-icon">
+        <title>Саликова Анастасия. Младший тестировщик</title>
+        <meta name="author" content="Anastasia Salikova">
+        <meta name="description" content="Страничка ввиде резюме на должность младшего тестировщика">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    </head>
+    <body>
+        <div style="display: none;">
+		    <include src="build/images/sprite.svg"></include>
+	    </div>
+        <header>
+            <nav>здесь будет меню</nav>
+            <h1>Саликова Анастасия</h1>
+            <p>начинающий тестировщик</p>
+            <p>И это моя web версия резюме</p>
+            <a href="#" download="резюме Саликова Анастасия">скачать резюме</a>
+            <svg style="width: 20px; height: 20px" class='social-icon-style twitter-style'>
+			    <use xlink:href="#icon-arrow_down"></use>
+			</svg>
+        </header>
+        <main>
+            <!-- skills -->
+            <section>
+                <h2>ключевые навыки</h2>
+                <input type="checkbox" name="all-checked" id="all-checked">
+                <label for="all-checked">посмотреть все</label>
+                <div>
+                    <div>
+                        <input type="checkbox" name="theory" id="theory" checked>
+                        <label for="theory">Теория тестирования</label>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="test-case" id="test-case">
+                        <label for="test-case">Документирование тестов</label>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="test-design" id="test-design">
+                        <label for="test-design">Техники тест-дизайна</label>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="bug-report" id="bug-report">
+                        <label for="bug-report">Написание баг репорта</label>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="web-technology" id="web-technology">
+                        <label for="web-technology">Написание баг репорта</label>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- tools -->
+            <section>
+                <h2>инструменты</h2>
+                <p>для проектирования тестов, системы контроля версий, отправки http запросов и др.</p>
+                <div>
+                    <h3>чек-листы</h3>
+                    <p>Sitechko, Google sheets, Excel </p>
+                </div>
+                <div>
+                    <h3>web инструменты</h3>
+                    <p>Chrome Dev Tools, Web Developer, PerfectPixel, Lightshot, bugmagnet, Form Filler</p>
+                </div>
+                <div>
+                    <h3>командная строка</h3>
+                    <p>Базовые команды вконсоли bash: cd, ls, mv, rm, mkdir, grep, top, kill, apt</p>
+                </div>
+                <div>
+                    <h3>HTTP И API</h3>
+                    <p>Postman, Fiddler - отправка и модификация запросов, тестирование REST API</p>
+                </div>
+                <div>
+                    <h3>ОС, ВИРТУАЛКИ, VCS</h3>
+                    <p>Windows, Linux- на уровне пользователя. VirtualBox. Git - команды status, add, commit, checkout, push, pull</p>
+                </div>
+                <div>
+                    <h3>багтрекинги и отчеты о результатах</h3>
+                    <p>Redmine, Mantis (оформление багов) Excel, Sitechco (анализ о результатах)</p>
+                </div>
+            </section>
+
+            <!-- jobs -->
+            <section>
+                <h2>опыт работы</h2>
+                <ul>
+                    <li>
+                        <p>
+                            <small>июнь</small>
+                            <span><small>20</small>17</span>
+                            <span>&ndash;</span>
+                            <small>апрель</small>
+                            <span><small>20</small>18</span>
+                        </p>
+                        <p>"Объединенные кондитеры"</p>
+                        <p>Аналитик отдела продаж</p>
+                    </li>
+                    <li>
+                        <p>
+                            <small>октябрь</small>
+                            <span><small>20</small>16</span>
+                        </p>
+                        <p>"Лаборатория качества"</br>Учебный центр</p>
+                        <p>Стажер-тестировщик</p>
+                    </li>
+                    <li>
+                        <p>
+                            <small>август</small>
+                            <span><small>20</small>16</span>
+                        </p>
+                        <p>проект «dadata.ru» на базе курсов «интенсив для начинающих тестировщиков»</p>
+                        <p>Стажер-тестировщик</p>
+
+                    </li>
+                    <li>
+                        <p>
+                            <small>май</small>
+                            <span><small>20</small>12</span>
+                            <span>&ndash;</span>
+                            <small>октябрь</small>
+                            <span><small>20</small>16</span>
+
+                        </p>
+                        <p>ООО "Невский Синдикат"</p>
+                        <p>Координатор-аналитик отдела продаж</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- education -->
+            <section>
+                <h2>образование</h2>
+                
+            </section>
+
+            <!-- self education -->
+            <section>
+
+            </section>
+
+            <!-- upgrade -->
+            <section>
+
+            </section>
+
+            <!-- contacts -->
+            <section>
+
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
 </html>
