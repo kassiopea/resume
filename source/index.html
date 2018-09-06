@@ -16,34 +16,45 @@
 		    <include src="build/images/sprite.svg"></include>
 	    </div>
         <header>
-            <button type="button" name="button" value="menu">меню</button>
+            <a href="#" aria-label="меню"></a>
             <nav>
-                <ul>
-                    <li>
+                <ul class="nav-items">
+                    <li class="nav-items__item">
+
+                        <picture>
+			                <!-- <source media="(min-width: 600px)" srcset="images/example.png 1x, images/example@2x.png 2x, images/example@3x.png 3x"> -->
+			                <img class="nav-items__userpic" src="images/userpic.jpg" srcset="images/userpic@2x.png 2x, images/userpic@3x.png 3x" alt="Мое фото">
+		                </picture>
                         <p>Саликова Анастасия</p>
                         <p>младший тестировщик</p>
                     </li>
-                    <li>
+                    <li class="nav-items__item">
                         <a href="tel:+7215517757">+7-921-551-77-57</a>
                     </li>
-                    <li>
+                    <li class="nav-items__item">
                         <a href="mailto:fotograf.anastasia@gmail.com">fotograf.anastasia@gmail.com</a>
                     </li>
-                    <li><a href="#main_page">главная</a></li>
-                    <li><a href="#skills_page">ключевые навыки</a></li>
-                    <li><a href="#tools_page">инструменты</a></li>
-                    <li><a href="#jobs_page">опыт работы</a></li>
-                    <li><a href="#education_page">образование</a></li>
-                    <li><a href="#certificates_page">сертификаты</a></li>
-                    <li><a href="#portfolio_page">портфолио</a></li>
-                    <li><a href="#contacts_page">контакты</a></li>
+                    <li class="nav-items__item"><a class="nav-items__link" href="#main_page">главная</a></li>
+                    <li class="nav-items__item"><a class="nav-items__link" href="#skills_page">ключевые навыки</a></li>
+                    <li class="nav-items__item"><a class="nav-items__link" href="#tools_page">инструменты</a></li>
+                    <li class="nav-items__item"><a class="nav-items__link" href="#jobs_page">опыт работы</a></li>
+                    <li class="nav-items__item"><a class="nav-items__link" href="#education_page">образование</a></li>
+                    <li class="nav-items__item"><a class="nav-items__link" href="#certificates_page">сертификаты</a></li>
+                    <li class="nav-items__item"><a class="nav-items__link" href="#portfolio_page">портфолио</a></li>
+                    <li class="nav-items__item"><a class="nav-items__link" href="#contacts_page">контакты</a></li>
                 </ul>
             </nav>
             <h1 id="main_page">Саликова Анастасия</h1>
             <p>начинающий тестировщик</p>
             <p>И это моя web версия резюме с портфолио</p>
-            <a href="#" download="резюме Саликова Анастасия">скачать резюме</a>
-            <svg style="width: 20px; height: 20px" class='social-icon-style twitter-style'>
+            <div>
+                <svg style="width: 15px; height: 15px">
+    			    <use xlink:href="#icon-downloading_file"></use>
+    			</svg>
+                <a href="#" download="резюме Саликова Анастасия">скачать резюме</a>
+            </div>
+
+            <svg style="width: 20px; height: 20px">
 			    <use xlink:href="#icon-arrow_down"></use>
 			</svg>
         </header>
@@ -89,52 +100,86 @@
             <section>
                 <h2 id="tools_page">инструменты</h2>
                 <p>для проектирования тестов, системы контроля версий, отправки http запросов и др.</p>
-                <div>
-                    <h3>чек-листы</h3>
-                    <ul>
-                        <li>Sitechko</li>
-                        <li>Google sheets</li>
-                        <li>Excel</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>web инструменты</h3>
-                    <ul>
-                        <li>Chrome Dev Tools</li>
-                        <li>Web Developer</li>
-                        <li>PerfectPixel</li>
-                        <li>Lightshot</li>
-                        <li>bugmagnet</li>
-                        <li>Form Filler</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>командная строка</h3>
-                    <p>Базовые команды вконсоли bash: cd, ls, mv, rm, mkdir, grep, top, kill, apt</p>
-                </div>
-                <div>
-                    <h3>HTTP И API</h3>
-                    <ul>
-                        <li>Fiddler - отправка и модификация запросов.</li>
-                        <li>Postman - тестирование REST API</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>ОС, ВИРТУАЛКИ, VCS</h3>
-                    <ul>
-                        <li>Windows, Linux- на уровне пользователя.</li>
-                        <li>Git - команды status, add, commit, checkout, push, pull</li>
-                        <li>VirtualBox - </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>багтрекинги и отчеты о результатах</h3>
-                    <p> </p>
-                    <ul>
-                        <li>Redmine, Mantis - оформление багов</li>
-                        <li>Excel, Sitechco - анализ результатов</li>
-                    </ul>
-                </div>
+
+                <ul>
+                    <li>
+                        <div>
+                            <svg style="width: 40px; height: 40px">
+                			    <use xlink:href="#icon-checklist"></use>
+                			</svg>
+                        </div>
+                        <h3>чек-листы</h3>
+                        <ul>
+                            <li>Sitechko</li>
+                            <li>Google sheets</li>
+                            <li>Excel</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>
+                            <svg style="width: 40px; height: 40px">
+                			    <use xlink:href="#icon-web"></use>
+                			</svg>
+                        </div>
+                        <h3>web инструменты</h3>
+                        <ul>
+                            <li>Chrome Dev Tools</li>
+                            <li>Web Developer</li>
+                            <li>PerfectPixel</li>
+                            <li>Lightshot</li>
+                            <li>bugmagnet</li>
+                            <li>Form Filler</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>
+                            <svg style="width: 40px; height: 40px">
+                			    <use xlink:href="#icon-coding"></use>
+                			</svg>
+                        </div>
+                        <h3>командная строка</h3>
+                        <p>Базовые команды вконсоли bash: cd, ls, mv, rm, mkdir, grep, top, kill, apt</p>
+                    </li>
+                    <li>
+                        <div>
+                            <svg style="width: 40px; height: 40px">
+                			    <use xlink:href="#icon-http"></use>
+                			</svg>
+                        </div>
+                        <h3>HTTP И API</h3>
+                        <ul>
+                            <li>Fiddler - отправка и модификация запросов.</li>
+                            <li>Postman - тестирование REST API</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>
+                            <svg style="width: 40px; height: 40px">
+                			    <use xlink:href="#icon-laptop"></use>
+                			</svg>
+                        </div>
+                        <h3>ОС, ВИРТУАЛКИ, VCS</h3>
+                        <ul>
+                            <li>Windows, Linux- на уровне пользователя.</li>
+                            <li>Git - команды status, add, commit, checkout, push, pull</li>
+                            <li>VirtualBox - </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>
+                            <svg style="width: 40px; height: 40px">
+                			    <use xlink:href="#icon-bug"></use>
+                			</svg>
+                        </div>
+                        <h3>багтрекинги и отчеты о результатах</h3>
+                        <p> </p>
+                        <ul>
+                            <li>Redmine, Mantis - оформление багов</li>
+                            <li>Excel, Sitechco - анализ результатов</li>
+                        </ul>
+                    </li>
+                </ul>
+
             </section>
 
             <!-- jobs -->
