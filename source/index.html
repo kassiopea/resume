@@ -16,10 +16,29 @@
 		    <include src="build/images/sprite.svg"></include>
 	    </div>
         <header>
-            <nav>здесь будет меню</nav>
+            <button type="button" name="button" value="menu">меню</button>
+            <nav>
+                <ul>
+                    <li>
+                        <p>Саликова Анастасия</p>
+                        <p>младший тестировщик</p>
+                    </li>
+                    <li>
+                        <p>+7-921-551-77-57</p>
+                    </li>
+                    <li>fotograf.anastasia@gmail.com</li>
+                    <li>главная</li>
+                    <li>ключевые навыки</li>
+                    <li>инструменты</li>
+                    <li>опыт работы</li>
+                    <li>образование</li>
+                    <li>самообразование</li>
+                    <li>контакты</li>
+                </ul>
+            </nav>
             <h1>Саликова Анастасия</h1>
             <p>начинающий тестировщик</p>
-            <p>И это моя web версия резюме</p>
+            <p>И это моя web версия резюме с портфолио</p>
             <a href="#" download="резюме Саликова Анастасия">скачать резюме</a>
             <svg style="width: 20px; height: 20px" class='social-icon-style twitter-style'>
 			    <use xlink:href="#icon-arrow_down"></use>
@@ -29,37 +48,35 @@
             <!-- skills -->
             <section>
                 <h2>ключевые навыки</h2>
-                <input type="checkbox" name="all-checked" id="all-checked">
-                <label for="all-checked">посмотреть все</label>
                 <div>
                     <div>
                         <input type="checkbox" name="theory" id="theory" checked>
                         <label for="theory">Теория тестирования</label>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Знакома с терминологией в тестировании и основными жизненными циклами ПО. Знаю разницу между QA и QC. Могу применять теоретические знания на практике. Пример: тестирование <a href="#">тостера</a></p>
                     </div>
 
                     <div>
                         <input type="checkbox" name="test-case" id="test-case">
                         <label for="test-case">Документирование тестов</label>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-
-                    <div>
-                        <input type="checkbox" name="test-design" id="test-design">
-                        <label for="test-design">Техники тест-дизайна</label>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Базовые навыки составления тест-кейсов и чек листов. Применение техник тест-дизайна:</p>
+                        <ul>
+                            <li>эквивалентное разделение</li>
+                            <li>анализ граничных значений (в том числе выявление логической и технологической границ)</li>
+                            <li>метод попарного тестирования</li>
+                            <li>диаграмма состояний и переходов</li>
+                        </ul>
                     </div>
 
                     <div>
                         <input type="checkbox" name="bug-report" id="bug-report">
                         <label for="bug-report">Написание баг репорта</label>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Имею представление о жизненном цикле дефекта. Владею базовыми навыками составления отчетов об ошибках. Не боюсь заглянуть в логи. Знаю, чем отличается серьезность и приоритет дефекта.</p>
                     </div>
 
                     <div>
                         <input type="checkbox" name="web-technology" id="web-technology">
-                        <label for="web-technology">Написание баг репорта</label>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <label for="web-technology">Базовые знания web технологий</label>
+                        <p>Знания html, css, javascript, достаточные для написания простого сайта-визитки. Python на уровне написания бота для telegram с функцией отправки пользователю ссылки на рандомное видео, реализованной с помощью API Яндекс.Диск. Знакома с понятием ООП.</p>
                     </div>
 
                 </div>
@@ -71,11 +88,22 @@
                 <p>для проектирования тестов, системы контроля версий, отправки http запросов и др.</p>
                 <div>
                     <h3>чек-листы</h3>
-                    <p>Sitechko, Google sheets, Excel </p>
+                    <ul>
+                        <li>Sitechko</li>
+                        <li>Google sheets</li>
+                        <li>Excel</li>
+                    </ul>
                 </div>
                 <div>
                     <h3>web инструменты</h3>
-                    <p>Chrome Dev Tools, Web Developer, PerfectPixel, Lightshot, bugmagnet, Form Filler</p>
+                    <ul>
+                        <li>Chrome Dev Tools</li>
+                        <li>Web Developer</li>
+                        <li>PerfectPixel</li>
+                        <li>Lightshot</li>
+                        <li>bugmagnet</li>
+                        <li>Form Filler</li>
+                    </ul>
                 </div>
                 <div>
                     <h3>командная строка</h3>
@@ -83,15 +111,26 @@
                 </div>
                 <div>
                     <h3>HTTP И API</h3>
-                    <p>Postman, Fiddler - отправка и модификация запросов, тестирование REST API</p>
+                    <ul>
+                        <li>Fiddler - отправка и модификация запросов.</li>
+                        <li>Postman - тестирование REST API</li>
+                    </ul>
                 </div>
                 <div>
                     <h3>ОС, ВИРТУАЛКИ, VCS</h3>
-                    <p>Windows, Linux- на уровне пользователя. VirtualBox. Git - команды status, add, commit, checkout, push, pull</p>
+                    <ul>
+                        <li>Windows, Linux- на уровне пользователя.</li>
+                        <li>Git - команды status, add, commit, checkout, push, pull</li>
+                        <li>VirtualBox - </li>
+                    </ul>
                 </div>
                 <div>
                     <h3>багтрекинги и отчеты о результатах</h3>
-                    <p>Redmine, Mantis (оформление багов) Excel, Sitechco (анализ о результатах)</p>
+                    <p> </p>
+                    <ul>
+                        <li>Redmine, Mantis - оформление багов</li>
+                        <li>Excel, Sitechco - анализ результатов</li>
+                    </ul>
                 </div>
             </section>
 
@@ -145,26 +184,146 @@
             <!-- education -->
             <section>
                 <h2>образование</h2>
-                
+                <ul>
+                    <li>
+                        <div>
+                            <p>СПБГУКИ</p>
+                            <p>2001-2006</p>
+                        </div>
+                        <div>
+                            <p>Библиотекарь-библиограф</p>
+                            <p>дипломная тема: «Художественное оформление современной детской книги</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Учебный центр «Конто»</p>
+                            <p>февраль 2008</p>
+                        </div>
+                        <div>
+                            <p>Бухгалтерский учет и налогообложение</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>software-testing</p>
+                            <p>август 2016</p>
+                        </div>
+                        <div>
+                            <p>Онлайн-интенсив для начинающих тестировщиков</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>software-testing</p>
+                            <p>октябрь 2017</p>
+                        </div>
+                        <div>
+                            <p>Тестирование веб-приложений</p>
+                        </div>
+                    </li>
+                </ul>
             </section>
 
             <!-- self education -->
             <section>
+                <h2>самообразование</h2>
+                <p>бесплатно пройденные онлайн-курсы</p>
+                <div>
+                    <button>все</button>
+                    <button>тестирование</button>
+                    <button>программирование</button>
+                    <button>linux</button>
+                </div>
 
+                <div>
+                    <a href="#">здесь будет сертификат</a>
+                </div>
+
+                <div>
+                    <a href="#">здесь будет сертификат</a>
+                </div>
+
+                <div>
+                    <a href="#">здесь будет сертификат</a>
+                </div>
+
+                <div>
+                    <a href="#">здесь будет сертификат</a>
+                </div>
+
+                <div>
+                    <a href="#">здесь будет сертификат</a>
+                </div>
+
+                <div>
+                    <a href="#">здесь будет сертификат</a>
+                </div>
             </section>
 
             <!-- upgrade -->
             <section>
+                <div>
+                    <span>2<sup>+</sup></span>
+                    <p>года непрерывного обучения</p>
+                </div>
+
+                <div>
+                    <span>11<sup>+</sup></span>
+                    <p>законченных обучающих курсов</p>
+                </div>
+
+                <div>
+                    <span>285<sup>+</sup></span>
+                    <p>решенных задач</p>
+                </div>
 
             </section>
 
+            <!-- portfolio -->
+            <section>
+            <h2>Портфолио</h2>
+                <p>ссылки на чек-листы, баг репорты, отчет о тестировании</p>
+                <ul>
+                    <li>Ссылка на чек-листы + скачать</li>
+                    <li>Ссылка на баг репорты + скачать</li>
+                    <li>Ссылка на отчет о тестировании + скачать</li>
+                </ul>
+            </section>
             <!-- contacts -->
             <section>
+                <h2>контакты</h2>
+                <div>
+                    <div>
+                        <p>Санкт-Петербург</p>
+                    </div>
 
+                    <div>
+                        <p>+7 921-551-77-57</p>
+                        <p>+7 921-858-13-39</p>
+                    </div>
+
+                    <div>
+                        <p>admin@asalikova.ru</p>
+                        <p>fotograf.anastasia@gmail.com</p>
+                    </div>
+                </div>
+                <div>
+                    <form class="#" action="index.html" method="post">
+                        <label for="username">Имя</label>
+                        <input type="text" id="username" name="username" value="Иван">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="example@gmail.com">
+                        <label for="message">Сообщение</label>
+                        <textarea name="message" id="message" value="Сообщение"></textarea>
+                        <button type="submit" name="submit" id="submit">отправить</button>
+                    </form>
+                </div>
             </section>
         </main>
         <footer>
-
+            <p>&copy; Anastasia Salikova</p>
+            <p>2018</p>
         </footer>
     </body>
 </html>
