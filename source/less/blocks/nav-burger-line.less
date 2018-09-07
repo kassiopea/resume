@@ -1,0 +1,33 @@
+.header__nav-burger-line {
+    position: absolute;
+    height: 2px;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+    background-color: @white-color;
+    opacity: 1px;
+    &::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        top: 10px;
+        display: block;
+        background-color: @white-color;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        bottom: 10px;
+        display: block;
+        background-color: @white-color;
+    }
+}
+
+.header__nav-burger-line, .header__nav-burger-line::before,
+.header__nav-burger-line::after {
+    transition: all .3s ease-in-out;
+}

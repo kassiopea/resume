@@ -15,9 +15,12 @@
         <div style="display: none;">
 		    <include src="build/images/sprite.svg"></include>
 	    </div>
-        <header>
-            <a href="#" aria-label="меню" class="header__button-nav"></a>
-            <nav>
+        <header class="header">
+            <a href="#" aria-label="меню" class="header__button-nav">
+                <span class="header__nav-burger-line"></span>
+            </a>
+            <!-- блок с навигацией -->
+            <nav class="header__nav">
                 <ul class="nav-items">
                     <li class="nav-items__item">
                         <picture>
@@ -42,19 +45,22 @@
                     <li class="nav-items__item"><a class="nav-items__link" href="#contacts_page">контакты</a></li>
                 </ul>
             </nav>
-            <h1 id="main_page">Саликова Анастасия</h1>
-            <p>начинающий тестировщик</p>
-            <p>И это моя web версия резюме с портфолио</p>
-            <div>
-                <svg style="width: 15px; height: 15px">
-    			    <use xlink:href="#icon-downloading_file"></use>
-    			</svg>
-                <a href="#" download="резюме Саликова Анастасия">скачать резюме</a>
+            <!-- блок с главной страницы -->
+            <div class="header__main-wrap">
+                <h1 id="main_page" class="header__caption">Саликова Анастасия<span class="header__caption-small">начинающий тестировщик</span></h1>
+                <p>И это моя web версия резюме с портфолио</p>
+                <div class="header__wrap-button-resume">
+                    <svg class="header__img-download" style="width: 11px; height: 11px">
+        			    <use xlink:href="#icon-downloading_file"></use>
+        			</svg>
+                    <a href="#" download="резюме Саликова Анастасия.pdf" class="header__link-download links-style">скачать резюме</a>
+                </div>
             </div>
 
             <svg style="width: 20px; height: 20px">
 			    <use xlink:href="#icon-arrow_down"></use>
 			</svg>
+
         </header>
         <main>
             <!-- skills -->
