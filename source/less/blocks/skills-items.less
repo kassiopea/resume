@@ -1,0 +1,63 @@
+.skills__items input[type="checkbox"] {
+    display: none;
+}
+
+.skills__items label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0;
+    padding-left: 10px;
+    font-weight: 700;
+    border-bottom: 1px solid @grey-border;
+    border-top: 1px solid @grey-border;
+}
+
+.skills__plus {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+
+}
+.skills__plus:before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 4px;
+    top: 50%;
+    left: 0;
+    margin-top: -2px;
+    background-color: @black-color;
+    opacity: 1;
+}
+.skills__plus:after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 18px;
+    margin-left: 7px;
+    background-color: @black-color;
+}
+
+input[type="checkbox"] + label .skills__plus::after {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-90deg);
+}
+
+input[type="checkbox"] + label .skills__plus::before {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-90deg);
+  opacity: 1;
+}
+
+input:checked + label .skills__plus::after {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(90deg);
+
+}
+input:checked + label .skills__plus::before {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(90deg);
+  opacity: 0;
+}

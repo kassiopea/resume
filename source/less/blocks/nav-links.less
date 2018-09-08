@@ -1,0 +1,23 @@
+.nav-items__link {
+    position: relative;
+    display: block;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        top: 50%;
+        left: -20px;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.nav-tel::before {
+    background-image: url(../images/nav-call-answer.svg);
+}
+
+.nav-email::before {
+    background-image: url(../images/nav-email.svg);
+}

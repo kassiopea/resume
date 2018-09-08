@@ -16,38 +16,43 @@
 		    <include src="build/images/sprite.svg"></include>
 	    </div>
         <header class="header">
+            <!-- кнопка меню бургер -->
             <a href="#" aria-label="меню" class="header__button-nav">
                 <span class="header__nav-burger-line"></span>
             </a>
             <!-- блок с навигацией -->
-            <nav class="header__nav">
+            <nav class="header__nav close">
                 <ul class="nav-items">
-                    <li class="nav-items__item">
-                        <picture>
-			                <img class="nav-items__userpic" src="images/userpic.jpg" srcset="images/userpic@2x.jpg 2x, images/userpic@3x.jpg 3x" alt="Мое фото">
-		                </picture>
-                        <p>Саликова Анастасия</p>
-                        <p>младший тестировщик</p>
+                    <li class="nav-items__item nav-header">
+
+                            <picture>
+    			                <img class="nav-items__userpic" src="images/userpic.jpg" srcset="images/userpic@2x.jpg 2x, images/userpic@3x.jpg 3x" alt="Мое фото">
+    		                </picture>
+                        <div class="header__nav-caption">
+                            <h3 class="header__nav-caption">Саликова Анастасия</h3>
+                            <p class="header__job-position">младший тестировщик</p>
+                        </div>
+
                     </li>
                     <li class="nav-items__item">
-                        <a href="tel:+7215517757">+7-921-551-77-57</a>
+                        <a href="tel:+7215517757" class="nav-items__link links-style nav-tel">+7-921-551-77-57</a>
                     </li>
-                    <li class="nav-items__item">
-                        <a href="mailto:fotograf.anastasia@gmail.com">fotograf.anastasia@gmail.com</a>
+                    <li class="nav-items__item underline">
+                        <a href="mailto:fotograf.anastasia@gmail.com" class="nav-items__link links-style nav-email">fotograf.anastasia@gmail.com</a>
                     </li>
-                    <li class="nav-items__item"><a class="nav-items__link" href="#main_page">главная</a></li>
-                    <li class="nav-items__item"><a class="nav-items__link" href="#skills_page">ключевые навыки</a></li>
-                    <li class="nav-items__item"><a class="nav-items__link" href="#tools_page">инструменты</a></li>
-                    <li class="nav-items__item"><a class="nav-items__link" href="#jobs_page">опыт работы</a></li>
-                    <li class="nav-items__item"><a class="nav-items__link" href="#education_page">образование</a></li>
-                    <li class="nav-items__item"><a class="nav-items__link" href="#certificates_page">сертификаты</a></li>
-                    <li class="nav-items__item"><a class="nav-items__link" href="#portfolio_page">портфолио</a></li>
-                    <li class="nav-items__item"><a class="nav-items__link" href="#contacts_page">контакты</a></li>
+                    <li class="nav-items__item"><a class="nav-items__link links-style" href="#main_page">главная</a></li>
+                    <li class="nav-items__item"><a class="nav-items__link links-style" href="#skills_page">ключевые навыки</a></li>
+                    <li class="nav-items__item"><a class="nav-items__link links-style" href="#tools_page">инструменты</a></li>
+                    <li class="nav-items__item"><a class="nav-items__link links-style" href="#jobs_page">опыт работы</a></li>
+                    <li class="nav-items__item"><a class="nav-items__link links-style" href="#education_page">образование</a></li>
+                    <li class="nav-items__item"><a class="nav-items__link links-style" href="#certificates_page">сертификаты</a></li>
+                    <li class="nav-items__item"><a class="nav-items__link links-style" href="#portfolio_page">портфолио</a></li>
+                    <li class="nav-items__item"><a class="nav-items__link links-style" href="#contacts_page">контакты</a></li>
                 </ul>
             </nav>
             <!-- блок с главной страницы -->
             <div class="header__main-wrap">
-                <h1 id="main_page" class="header__caption">Саликова Анастасия<span class="header__caption-small">начинающий тестировщик</span></h1>
+                <h1 id="main_page" class="header__caption">Саликова Анастасия<span class="header__caption-small">младший тестировщик</span></h1>
                 <p>И это моя web версия резюме с портфолио</p>
                 <div class="header__wrap-button-resume">
                     <svg class="header__img-download" style="width: 11px; height: 11px">
@@ -57,27 +62,31 @@
                 </div>
             </div>
 
-            <svg style="width: 20px; height: 20px">
-			    <use xlink:href="#icon-arrow_down"></use>
-			</svg>
+            <a href="#skills_page">
+                <svg class="header__arrow-down" style="width: 20px; height: 20px">
+    			    <use xlink:href="#icon-arrow_down"></use>
+    			</svg>
+            </a>
+
 
         </header>
         <main>
             <!-- skills -->
-            <section>
-                <h2 id="skills_page">ключевые навыки</h2>
-                <div>
-                    <div>
+            <section class="skills">
+                <h2 id="skills_page" class="caption skills-caption">ключевые навыки</h2>
+                <div class="skills__wrap-checkbox">
+                    <div class="skills__items">
                         <input type="checkbox" name="theory" id="theory" checked>
-                        <label for="theory">Теория тестирования</label>
-                        <p>Знакома с терминологией в тестировании и основными жизненными циклами ПО. Знаю разницу между QA и QC. Могу применять теоретические знания на практике. Пример: тестирование <a href="#">тостера</a></p>
+                        <label for="theory">Теория тестирования<span class="skills__plus" aria-label="выбрать"></span></label>
+
+                        <p class="skills__description">Знакома с терминологией в тестировании и основными жизненными циклами ПО. Знаю разницу между QA и QC. Могу применять теоретические знания на практике. Пример: тестирование <a href="#">тостера</a></p>
                     </div>
 
-                    <div>
+                    <div class="skills__items">
                         <input type="checkbox" name="test-case" id="test-case">
-                        <label for="test-case">Документирование тестов</label>
-                        <p>Базовые навыки составления тест-кейсов и чек листов. Применение техник тест-дизайна:</p>
-                        <ul>
+                        <label for="test-case">Документирование тестов<span class="skills__plus" aria-label="выбрать"></span></label>
+                        <p class="skills__description close">Базовые навыки составления тест-кейсов и чек листов. Применение техник тест-дизайна:</p>
+                        <ul class="close">
                             <li>эквивалентное разделение</li>
                             <li>анализ граничных значений (в том числе выявление логической и технологической границ)</li>
                             <li>метод попарного тестирования</li>
@@ -85,39 +94,42 @@
                         </ul>
                     </div>
 
-                    <div>
+                    <div class="skills__items">
                         <input type="checkbox" name="bug-report" id="bug-report">
-                        <label for="bug-report">Написание баг репорта</label>
-                        <p>Имею представление о жизненном цикле дефекта. Владею базовыми навыками составления отчетов об ошибках. Не боюсь заглянуть в логи. Знаю, чем отличается серьезность и приоритет дефекта.</p>
+                        <label for="bug-report">Написание баг репорта<span class="skills__plus" aria-label="выбрать"></span></label>
+                        <p class="skills__description close">Имею представление о жизненном цикле дефекта. Владею базовыми навыками составления отчетов об ошибках. Не боюсь заглянуть в логи. Знаю, чем отличается серьезность и приоритет дефекта.</p>
                     </div>
 
-                    <div>
+                    <div class="skills__items">
                         <input type="checkbox" name="web-technology" id="web-technology">
-                        <label for="web-technology">Базовые знания web технологий</label>
-                        <p>Знания html, css, javascript, достаточные для написания простого сайта-визитки. Python на уровне написания бота для telegram с функцией отправки пользователю ссылки на рандомное видео, реализованной с помощью API Яндекс.Диск. Умение составлять простые запросы SQL (join, union, group by). Знакома с понятием ООП.</p>
+                        <label for="web-technology">Базовые знания web технологий<span class="skills__plus" aria-label="выбрать"></span></label>
+                        <p class="skills__description close">Знания html, css, javascript, достаточные для написания простого сайта-визитки. Python на уровне написания бота для telegram с функцией отправки пользователю ссылки на рандомное видео, реализованной с помощью API Яндекс.Диск. Умение составлять простые запросы SQL (join, union, group by). Знакома с понятием ООП.</p>
                     </div>
 
                 </div>
             </section>
 
             <!-- tools -->
-            <section>
-                <h2 id="tools_page">инструменты</h2>
-                <p>для проектирования тестов, системы контроля версий, отправки http запросов и др.</p>
+            <section class="tools">
+                <h2 id="tools_page" class="tools__caption caption">инструменты</h2>
+                <p class="tools__description">для проектирования тестов, системы контроля версий, отправки http запросов и др.</p>
 
-                <ul>
-                    <li>
-                        <div>
-                            <svg style="width: 40px; height: 40px">
+                <ul class="tools__list">
+                    <li class="tools__card">
+                        <div class="tools__wrap-card-img">
+                            <svg class="tools__card-img" style="width: 20px; height: 20px">
                 			    <use xlink:href="#icon-checklist"></use>
                 			</svg>
                         </div>
-                        <h3>чек-листы</h3>
-                        <ul>
-                            <li>Sitechko</li>
-                            <li>Google sheets</li>
-                            <li>Excel</li>
-                        </ul>
+                        <div class="tools__text-blog">
+                            <h3 class="tools__caption">чек-листы</h3>
+                            <ul class="tools__text-items">
+                                <li>Sitechko</li>
+                                <li>Google sheets</li>
+                                <li>Excel</li>
+                            </ul>
+                        </div>
+
                     </li>
                     <li>
                         <div>
