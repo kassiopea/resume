@@ -76,36 +76,50 @@
                 <h2 id="skills_page" class="caption skills-caption">ключевые навыки</h2>
                 <div class="skills__wrap-checkbox">
                     <div class="skills__items">
-                        <input type="checkbox" name="theory" id="theory" checked>
-                        <label for="theory">Теория тестирования<span class="skills__plus" aria-label="выбрать"></span></label>
-
-                        <p class="skills__description">Знакома с терминологией в тестировании и основными жизненными циклами ПО. Знаю разницу между QA и QC. Могу применять теоретические знания на практике. Пример: тестирование <a href="#">тостера</a></p>
+                        <div class="skills__wrap-caption">
+                            <input type="checkbox" name="theory" id="theory" checked>
+                            <label for="theory">Теория тестирования<span class="skills__plus" aria-label="выбрать"></span></label>
+                        </div>
+                        <div class="skills__wrap-description">
+                            <p class="skills__description">Знакома с терминологией в тестировании и основными жизненными циклами ПО. Знаю разницу между QA и QC. Могу применять теоретические знания на практике. Пример: тестирование <a href="#">тостера</a></p>
+                        </div>
                     </div>
 
                     <div class="skills__items">
-                        <input type="checkbox" name="test-case" id="test-case">
-                        <label for="test-case">Документирование тестов<span class="skills__plus" aria-label="выбрать"></span></label>
-                        <p class="skills__description close">Базовые навыки составления тест-кейсов и чек листов. Применение техник тест-дизайна:</p>
-                        <ul class="close">
-                            <li>эквивалентное разделение</li>
-                            <li>анализ граничных значений (в том числе выявление логической и технологической границ)</li>
-                            <li>метод попарного тестирования</li>
-                            <li>диаграмма состояний и переходов</li>
-                        </ul>
+                        <div class="skills__wrap-caption">
+                            <input type="checkbox" name="test-case" id="test-case">
+                            <label for="test-case">Документирование тестов<span class="skills__plus" aria-label="выбрать"></span></label>
+                        </div>
+                        <div class="skills__wrap-description close">
+                            <p class="skills__description">Базовые навыки составления тест-кейсов и чек листов. Применение техник тест-дизайна:</p>
+                            <ul class="close">
+                                <li>эквивалентное разделение</li>
+                                <li>анализ граничных значений (в том числе выявление логической и технологической границ)</li>
+                                <li>метод попарного тестирования</li>
+                                <li>диаграмма состояний и переходов</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="skills__items">
-                        <input type="checkbox" name="bug-report" id="bug-report">
-                        <label for="bug-report">Написание баг репорта<span class="skills__plus" aria-label="выбрать"></span></label>
-                        <p class="skills__description close">Имею представление о жизненном цикле дефекта. Владею базовыми навыками составления отчетов об ошибках. Не боюсь заглянуть в логи. Знаю, чем отличается серьезность и приоритет дефекта.</p>
+                        <div class="skills__wrap-caption">
+                            <input type="checkbox" name="bug-report" id="bug-report">
+                            <label for="bug-report">Написание баг репорта<span class="skills__plus" aria-label="выбрать"></span></label>
+                        </div>
+                        <div class="skills__wrap-description close">
+                            <p class="skills__description">Имею представление о жизненном цикле дефекта. Владею базовыми навыками составления отчетов об ошибках. Не боюсь заглянуть в логи. Знаю, чем отличается серьезность и приоритет дефекта.</p>
+                        </div>
                     </div>
 
                     <div class="skills__items">
-                        <input type="checkbox" name="web-technology" id="web-technology">
-                        <label for="web-technology">Базовые знания web технологий<span class="skills__plus" aria-label="выбрать"></span></label>
-                        <p class="skills__description close">Знания html, css, javascript, достаточные для написания простого сайта-визитки. Python на уровне написания бота для telegram с функцией отправки пользователю ссылки на рандомное видео, реализованной с помощью API Яндекс.Диск. Умение составлять простые запросы SQL (join, union, group by). Знакома с понятием ООП.</p>
+                        <div class="skills__wrap-caption">
+                            <input type="checkbox" name="web-technology" id="web-technology">
+                            <label for="web-technology">Базовые знания web технологий<span class="skills__plus" aria-label="выбрать"></span></label>
+                        </div>
+                        <div class="skills__wrap-description close">
+                            <p class="skills__description">Знания html, css, javascript, достаточные для написания простого сайта-визитки. Python на уровне написания бота для telegram с функцией отправки пользователю ссылки на рандомное видео, реализованной с помощью API Яндекс.Диск. Умение составлять простые запросы SQL (join, union, group by). Знакома с понятием ООП.</p>
+                        </div>
                     </div>
-
                 </div>
             </section>
 
@@ -117,9 +131,11 @@
                 <ul class="tools__list">
                     <li class="tools__card">
                         <div class="tools__wrap-card-img">
-                            <svg class="tools__card-img" style="width: 20px; height: 20px">
-                			    <use xlink:href="#icon-checklist"></use>
-                			</svg>
+                            <div class="tools__wrap-img">
+                                <svg class="tools__card-img" style="width: 20px; height: 20px">
+                    			    <use xlink:href="#icon-checklist"></use>
+                    			</svg>
+                            </div>
                         </div>
                         <div class="tools__text-blog">
                             <h3 class="tools__caption">чек-листы</h3>
@@ -131,68 +147,73 @@
                         </div>
 
                     </li>
-                    <li>
-                        <div>
-                            <svg style="width: 40px; height: 40px">
-                			    <use xlink:href="#icon-web"></use>
-                			</svg>
+                    <li class="tools__card">
+                        <div class="tools__wrap-card-img">
+                            <div class="tools__wrap-img">
+                                <svg class="tools__card-img" style="width: 20px; height: 20px">
+                    			    <use xlink:href="#icon-web"></use>
+                    			</svg>
+                            </div>
                         </div>
-                        <h3>web инструменты</h3>
-                        <ul>
-                            <li>Chrome Dev Tools</li>
-                            <li>Web Developer</li>
-                            <li>PerfectPixel</li>
-                            <li>Lightshot</li>
-                            <li>bugmagnet</li>
-                            <li>Form Filler</li>
-                        </ul>
+                        <div class="tools__text-blog">
+                            <h3>web инструменты</h3>
+                            <p class="tools__p">Chrome Dev Tools, Web Developer, PerfectPixel, Lightshot, bugmagnet, Form Filler</p>
+                        </div>
                     </li>
-                    <li>
-                        <div>
-                            <svg style="width: 40px; height: 40px">
-                			    <use xlink:href="#icon-coding"></use>
-                			</svg>
+
+                    <li class="tools__card">
+                        <div class="tools__wrap-card-img">
+                            <div class="tools__wrap-img">
+                                <svg class="tools__card-img" style="width: 20px; height: 20px">
+                    			    <use xlink:href="#icon-coding"></use>
+                    			</svg>
+                            </div>
                         </div>
-                        <h3>командная строка</h3>
-                        <p>Базовые команды вконсоли bash: cd, ls, mv, rm, mkdir, grep, top, kill, apt</p>
+                        <div class="tools__text-blog">
+                            <h3>командная строка</h3>
+                            <p class="tools__p">Базовые команды вконсоли bash: cd, ls, mv, rm, mkdir, grep, top, kill, apt</p>
+                        </div>
                     </li>
-                    <li>
-                        <div>
-                            <svg style="width: 40px; height: 40px">
-                			    <use xlink:href="#icon-http"></use>
-                			</svg>
+
+                    <li class="tools__card">
+                        <div class="tools__wrap-card-img">
+                            <div class="tools__wrap-img">
+                                <svg class="tools__card-img" style="width: 20px; height: 20px">
+                    			    <use xlink:href="#icon-http"></use>
+                    			</svg>
+                            </div>
                         </div>
-                        <h3>HTTP И API</h3>
-                        <ul>
-                            <li>Fiddler - отправка и модификация запросов.</li>
-                            <li>Postman - тестирование REST API</li>
-                        </ul>
+                        <div class="tools__text-blog">
+                            <h3>HTTP И API</h3>
+                            <p class="tools__p">Fiddler - отправка и модификация запросов. Postman - тестирование REST API</p>
+                        </div>
                     </li>
-                    <li>
-                        <div>
-                            <svg style="width: 40px; height: 40px">
-                			    <use xlink:href="#icon-laptop"></use>
-                			</svg>
+
+                    <li class="tools__card">
+                        <div class="tools__wrap-card-img">
+                            <div class="tools__wrap-img">
+                                <svg class="tools__card-img" style="width: 20px; height: 20px">
+                    			    <use xlink:href="#icon-laptop"></use>
+                    			</svg>
+                            </div>
                         </div>
-                        <h3>ОС, ВИРТУАЛКИ, VCS</h3>
-                        <ul>
-                            <li>Windows, Linux- на уровне пользователя.</li>
-                            <li>Git - команды status, add, commit, checkout, push, pull</li>
-                            <li>VirtualBox - </li>
-                        </ul>
+                        <div class="tools__text-blog">
+                            <h3>ОС, ВИРТУАЛКИ, VCS</h3>
+                            <p class="tools__p">Пользователь Windows, Linux. Git - команды status, add, commit, push, pull и др. VirtualBox.</p>
+                        </div>
                     </li>
-                    <li>
-                        <div>
-                            <svg style="width: 40px; height: 40px">
-                			    <use xlink:href="#icon-bug"></use>
-                			</svg>
+                    <li class="tools__card">
+                        <div class="tools__wrap-card-img">
+                            <div class="tools__wrap-img">
+                                <svg class="tools__card-img" style="width: 20px; height: 20px">
+                    			    <use xlink:href="#icon-bug"></use>
+                    			</svg>
+                            </div>
                         </div>
-                        <h3>багтрекинги и отчеты о результатах</h3>
-                        <p> </p>
-                        <ul>
-                            <li>Redmine, Mantis - оформление багов</li>
-                            <li>Excel, Sitechco - анализ результатов</li>
-                        </ul>
+                        <div class="tools__text-blog">
+                            <h3>Оформление багов и отчетность</h3>
+                            <p class="tools__p">Redmine, Mantis - оформление багов. Excel, Sitechco - анализ результатов.</p>
+                        </div>
                     </li>
                 </ul>
 
