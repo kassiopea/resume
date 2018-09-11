@@ -2,6 +2,7 @@
 @import "variables.less";
 @import "mixin.less";
 @import "blocks/body.less";
+@import "blocks/visually-hidden.less";
 @import "blocks/button-nav.less";
 @import "blocks/header.less";
 @import "blocks/nav.less";
@@ -49,17 +50,26 @@
 @import "blocks/education-list-item.less";
 @import "blocks/education-title-item.less";
 @import "blocks/education-links.less";
+@import "blocks/certificates.less";
 @import "blocks/certificates-wrap-nav.less";
 @import "blocks/certificates-nav-item.less";
 @import "blocks/cert-active.less";
 @import "blocks/certificates-wrap-images.less";
 @import "blocks/certificates-wrap-img.less";
+@import "blocks/certificates-description.less";
 @import "blocks/progress.less";
+@import "blocks/progress-wrap.less";
+@import "blocks/progress-video-bg.less";
+@import "blocks/progress-item.less";
+@import "blocks/progress-integer.less";
+@import "blocks/portfolio.less";
+@import "blocks/portfolio-description.less";
+@import "blocks/portfolio-list.less";
+@import "blocks/portfolio-item.less";
 
 .header__button-nav {
-    margin-left: auto;
-    margin-top: 5%;
-    margin-right: 5%;
+    right: 3%;
+    top: 3%;
 }
 
 .header__wrap-button-resume {
@@ -122,4 +132,16 @@
     }
 }
 
+.progress {
+    margin-top: 15%;
+}
+
+.portfolio {
+    margin-top: 15%;
+}
+
+.portfolio__list {
+    margin-left: 5%;
+    margin-top: 10%;
+}
 @import "blocks/media.less";

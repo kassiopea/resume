@@ -338,7 +338,7 @@
             <!-- certificates -->
             <section class="certificates">
                 <h2 id="certificates_page" class="caption">сертификаты</h2>
-                <p>полученные после прохождения онлайн-курсов (как платных, так и бесплатных)</p>
+                <p class="certificates__description">полученные после прохождения онлайн-курсов (как платных, так и бесплатных)</p>
                 <div class="certificates__wrap-nav">
                     <a href="#all" class="links-style certificates__nav-item cert-active">все</a>
                     <a href="#testing" class="links-style certificates__nav-item">тестирование</a>
@@ -431,33 +431,43 @@
 
             <!-- upgrade progress -->
             <section class="progress">
-                <h2>Достижения</h2>
-                <div>
-                    <span>2<sup>+</sup></span>
-                    <p>года непрерывного обучения</p>
-                </div>
+                <div class="progress__wrap">
+                    <h2 class="visually-hidden">Достижения</h2>
+                    <div class="progress__item">
+                        <span class="progress__integer">2<sup>+</sup></span>
+                        <p>года непрерывного обучения</p>
+                    </div>
 
-                <div>
-                    <span>11<sup>+</sup></span>
-                    <p>законченных обучающих курсов</p>
-                </div>
+                    <div class="progress__item">
+                        <span class="progress__integer">11<sup>+</sup></span>
+                        <p>законченных обучающих курсов</p>
+                    </div>
 
-                <div>
-                    <span>285<sup>+</sup></span>
-                    <p>решенных задач</p>
-                </div>
+                    <div class="progress__item">
+                        <span class="progress__integer">285<sup>+</sup></span>
+                        <p>решенных задач</p>
+                    </div>
+                    <div class="progress__video-bg">
+                        <video width="280" height="420" poster="/images/poster-mobile.jpg" autoplay loop>
+                              <source src="/images/test.mp4" type="video/mp4">
+                              <source src="/images/test.webm" type="video/webm">
+                              <source src="/images/test.ogv" type="video/ogg">
+                        </video>
+                    </div>
 
+                </div>
             </section>
 
             <!-- portfolio -->
-            <section>
-            <h2 id="portfolio_page">Портфолио</h2>
-                <p>ссылки на чек-листы, баг репорты, отчет о тестировании</p>
-                <ul>
-                    <li>Ссылка на чек-листы + скачать</li>
-                    <li>Ссылка на баг репорты + скачать</li>
-                    <li>Ссылка на отчет о тестировании + скачать</li>
+            <section class="portfolio">
+            <h2 id="portfolio_page" class="caption">Портфолио</h2>
+                <p class="portfolio__description">ссылки на чек-листы, баг репорты, отчет о тестировании</p>
+                <ul class="portfolio__list">
+                    <li class="portfolio__item">Ссылка на чек-листы + скачать</li>
+                    <li class="portfolio__item">Ссылка на баг репорты + скачать</li>
+                    <li class="portfolio__item">Ссылка на отчет о тестировании + скачать</li>
                 </ul>
+
             </section>
             <!-- contacts -->
             <section>
