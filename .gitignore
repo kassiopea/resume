@@ -9,3 +9,5 @@ npm-debug.*
 source/css/*.css
 Thumbs.d
 psd/
+*.mov
+*.avi
