@@ -72,7 +72,7 @@
         </header>
         <main>
             <!-- skills -->
-            <section class="skills">
+            <section class="skills sections-style">
                 <h2 id="skills_page" class="caption skills-caption">ключевые навыки</h2>
                 <div class="skills__wrap-checkbox">
                     <div class="skills__items">
@@ -124,7 +124,7 @@
             </section>
 
             <!-- tools -->
-            <section class="tools">
+            <section class="tools sections-style">
                 <h2 id="tools_page" class="tools__caption caption">инструменты</h2>
                 <p class="tools__description">для проектирования тестов, системы контроля версий, отправки http запросов и др.</p>
 
@@ -220,7 +220,7 @@
             </section>
 
             <!-- jobs -->
-            <section class="jobs">
+            <section class="jobs sections-style">
                 <h2 id="jobs_page" class="caption">опыт работы</h2>
                 <ul class="jobs__all-items">
                     <li class="jobs__item">
@@ -299,7 +299,7 @@
             </section>
 
             <!-- education -->
-            <section class="education">
+            <section class="education sections-style">
                 <h2 id="education_page" class="caption">образование</h2>
                 <ul class="education__list">
                     <li class="education__list-item">
@@ -336,7 +336,7 @@
             </section>
 
             <!-- certificates -->
-            <section class="certificates">
+            <section class="certificates sections-style">
                 <h2 id="certificates_page" class="caption">сертификаты</h2>
                 <p class="certificates__description">полученные после прохождения онлайн-курсов (как платных, так и бесплатных)</p>
                 <div class="certificates__wrap-nav">
@@ -430,7 +430,18 @@
             </section>
 
             <!-- upgrade progress -->
-            <section class="progress">
+            <section class="progress sections-style">
+
+                <div class="progress__video-bg">
+                     <!-- width="280" height="420" -->
+                    <video poster="/images/poster-mobile.jpg" autoplay loop>
+                          <source src="/images/test.mp4" type="video/mp4">
+                          <source src="/images/test.webm" type="video/webm">
+                          <source src="/images/test.ogv" type="video/ogg">
+                            Your browser does not support the video tag.
+                    </video>
+                </div>
+
                 <div class="progress__wrap">
                     <h2 class="visually-hidden">Достижения</h2>
                     <div class="progress__item">
@@ -447,19 +458,13 @@
                         <span class="progress__integer">285<sup>+</sup></span>
                         <p>решенных задач</p>
                     </div>
-                    <div class="progress__video-bg">
-                        <video width="280" height="420" poster="/images/poster-mobile.jpg" autoplay loop>
-                              <source src="/images/test.mp4" type="video/mp4">
-                              <source src="/images/test.webm" type="video/webm">
-                              <source src="/images/test.ogv" type="video/ogg">
-                        </video>
-                    </div>
+
 
                 </div>
             </section>
 
             <!-- portfolio -->
-            <section class="portfolio">
+            <section class="portfolio sections-style">
             <h2 id="portfolio_page" class="caption">Портфолио</h2>
                 <p class="portfolio__description">ссылки на чек-листы, баг репорты, отчет о тестировании</p>
                 <ul class="portfolio__list">
@@ -470,54 +475,58 @@
 
             </section>
             <!-- contacts -->
-            <section>
-                <h2 id="contacts_page">контакты</h2>
-                <div>
-                    <div>
+            <section class="contacts sections-style">
+                <h2 id="contacts_page" class="contacts__caption caption">контакты</h2>
+                <div class="contacts__contacts-items">
+                    <div class="contacts__location contacts__contacts-item">
                         <p>Санкт-Петербург</p>
                     </div>
 
-                    <div>
-                        <a href="tel:+79215517757">+7 921-551-77-57</a>
-                        <a href="tel:+79218581339">+7 921-858-13-39</a>
+                    <div class="contacts__tel contacts__contacts-item">
+                        <a href="tel:+79215517757" class="links-style">+7 921-551-77-57</a>
+                        <a href="tel:+79218581339" class="links-style">+7 921-858-13-39</a>
                     </div>
 
-                    <div>
-                        <a href="mailto:admin@asalikova.ru">admin@asalikova.ru</a>
-                        <a href="mailto:fotograf.anastasia@gmail.com">fotograf.anastasia@gmail.com</a>
+                    <div class="contacts__email contacts__contacts-item">
+                        <a href="mailto:admin@asalikova.ru" class="links-style">admin@asalikova.ru</a>
+                        <a href="mailto:fotograf.anastasia@gmail.com" class="links-style">fotograf.anastasia@gmail.com</a>
                     </div>
-                    <div>
-                        <a href="skype:fotograf.anastasia?chat">skype</a>
+                    <div class="contacts__skype contacts__contacts-item">
+                        <p>
+                            <a href="skype:fotograf.anastasia?chat" class="links-style">skype</a>
+                        </p>
+
                     </div>
                 </div>
-                <div>
-                    <form class="#" action="index.html" method="post">
+                <div class="contacts__form">
+                    <form class="contacts__feedbackform" action="index.html" method="post">
                         <label for="username">Имя</label>
-                        <input type="text" id="username" name="username" value="Иван">
-                        <span>здесь будут сообщения об ошибках</span>
+                        <input type="text" id="username" name="username"placeholder="Иван">
+                        <span class="form__error close">Поле имя должно содержать не менее 2 символов</span>
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" value="example@gmail.com">
-                        <span>здесь будут сообщения об ошибках</span>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                        <span class="form__error close">поле email должно быть в формате example@mail.com</span>
                         <label for="message">Сообщение</label>
                         <textarea name="message" id="message" placeholder="Сообщение"></textarea>
-                        <span>здесь будут сообщения об ошибках</span>
-                        <svg style="width: 20px; height: 20px">
-                            <use xlink:href="#icon-send"></use>
-                        </svg>
-                        <button type="submit" name="submit" id="submit">отправить</button>
+                        <span class="form__error close">поле сообщение должно содержать не менее 2 символов и не более 5000</span>
+
+                        <div class="contacts__wrap-button">
+                            <svg class="contacts__send-icon" style="width: 12px; height: 12px">
+                                <use xlink:href="#icon-send"></use>
+                            </svg>
+                            <button class="contacts__button" type="submit" name="submit" id="submit">отправить</button>
+                        </div>
+
                     </form>
                 </div>
             </section>
         </main>
-        <footer>
-            <p>&copy; Anastasia Salikova</p>
-            <p>2018</p>
+        <footer class="footer sections-style">
+            <p>&copy; Anastasia Salikova <span class="footer__year">2018</span></p>
         </footer>
         <div class="popup-images-wrap" style="display:none">
             <button type="button" name="button" aria-label="закрыть"></button>
-            <div class="popup-images">
-
-            </div>
+            <div class="popup-images"></div>
         </div>
 
         <div class="popup-form-wrap" style="display:none">

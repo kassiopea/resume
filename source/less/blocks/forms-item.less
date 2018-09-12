@@ -1,0 +1,48 @@
+input {
+    height: 20px;
+}
+
+label {
+    margin-top: 5%;
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+#message {
+    height: 100px;
+}
+
+.form__error {
+    font-size: 10px;
+    color: @main-link-hover;
+}
+.contacts__wrap-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 150px;
+    height: 40px;
+    margin-top: 10%;
+    border: 1px solid @black-color;
+    &:hover {
+        background-color: @black-color;
+    }
+    &:hover .contacts__button {
+        color: @white-color;
+    }
+    &:hover .contacts__send-icon {
+        fill: white;
+    }
+}
+
+.contacts__send-icon {
+    transition: 0.6s;
+}
+.contacts__button {
+    font-size: 11px;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+}

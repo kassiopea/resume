@@ -1,0 +1,25 @@
+.contacts__contacts-item {
+    position: relative;
+    // padding-left: 20%;
+    padding: 2% 0 2% 22%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    &:first-child {
+        margin-top: 0;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 46px;
+        height: 46px;
+        // margin-left: -18px;
+        background-color: @black-color;
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position: center;
+    }
+}
