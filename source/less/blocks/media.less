@@ -10,3 +10,159 @@
 (min-resolution: 3dppx){
     background-image: url(../images/bg_header_nav@3x.jpg);
 }
+
+@media(min-width: 480px) {
+    .header__main-wrap {
+        padding: 20% 0;
+    }
+
+    .education__list-item {
+        width: 80%;
+    }
+
+    input {
+        height: 30px;
+    }
+}
+
+@media(min-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .header__main-wrap {
+        padding: 30% 0;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skills__wrap-checkbox {
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    .tools__text-items {
+        margin-top: 5%;
+    }
+
+    .jobs__description {
+        width: 70%;
+        align-self: center;
+    }
+
+    .progress__integer {
+        font-size: 28px;
+    }
+
+    .contacts__contacts-item {
+        padding-left: 18%;
+        &::before {
+            width: 60px;
+            height: 60px;
+            background-size: 18px;
+        }
+    }
+    .contacts__feedbackform input {
+        height: 40px;
+    }
+
+    .contacts__feedbackform input::placeholder, textarea::placeholder {
+        font-size: 12px;
+    }
+
+    #message {
+        height: 140px;
+    }
+
+}
+
+@media(min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .header__caption {
+        font-size: 32px;
+    }
+    .header__caption-small {
+        font-size: 14px;
+    }
+    .header__wrap-button-resume {
+        width: 240px;
+        height: 60px;
+    }
+
+    .header__img-download {
+        width: 13px;
+        height: 13px;
+    }
+
+    .header__link-download {
+        margin-left: 2%;
+    }
+
+    .header__arrow-down {
+        width: 30px;
+        height: 30px;
+    }
+    .caption {
+        font-size: 26px;
+    }
+    .tools__wrap-img {
+        width: 70px;
+        height: 70px;
+    }
+    .tools__card-img {
+        width: 30px;
+        height: 30px;
+    }
+    .jobs__dates {
+        font-size: 18px;
+    }
+    .jobs__year {
+        font-size: inherit;
+    }
+    .jobs__all-items {
+        align-items: flex-start;
+    }
+    .jobs__item {
+        width: 50%;
+    }
+    .jobs__description {
+        width: 90%;
+    }
+    .jobs__wrap-dates {
+        width: 140px;
+        height: 140px;
+        font-size: 20px;
+    }
+    .certificates__wrap-images {
+        grid-template-columns: 1fr 1fr;
+    }
+    .progress__integer {
+        font-size: 48px;
+    }
+    .progress__text-item {
+        font-size: 24px;
+    }
+    .contacts__contacts-item {
+        padding-left: 14%;
+    }
+    .contacts__button {
+        font-size: 14px;
+    }
+    .contacts__wrap-button {
+        width: 170px;
+        height: 50px;
+    }
+    .contacts__feedbackform input::placeholder, textarea::placeholder {
+        font-size: 16px;
+    }
+    textarea::placeholder {
+        padding-top: 4px;
+    }
+
+}

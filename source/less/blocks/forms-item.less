@@ -1,9 +1,12 @@
-input {
+.contacts__feedbackform input {
     height: 20px;
+    border: 1px solid @black-color;
 }
 
-label {
+.contacts__feedbackform label {
     margin-top: 5%;
+    padding-left: 4px;
+    padding-bottom: 4px;
     &:first-child {
         margin-top: 0;
     }
@@ -11,14 +14,17 @@ label {
 
 #message {
     height: 100px;
+    border: 1px solid @black-color;
 }
-input::placeholder, textarea::placeholder {
+.contacts__feedbackform input::placeholder, textarea::placeholder {
     font-size: 11px;
+    padding-left: 4px;
     color: #b3b3b3;
 }
 
 .form__error {
     font-size: 10px;
+    padding-left: 4px;
     color: @main-link-hover;
 }
 .contacts__wrap-button {
@@ -42,6 +48,8 @@ input::placeholder, textarea::placeholder {
 }
 
 .contacts__send-icon {
+    width: 12px;
+    height: 12px;
     transition: 0.6s;
 }
 .contacts__button {
