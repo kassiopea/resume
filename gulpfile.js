@@ -12,7 +12,8 @@ var include = require("posthtml-include"); //yes
 // var htmlmin = require("gulp-htmlmin"); /*don`t use it yet*/
 var removeHtmlComm = require("gulp-remove-html-comments"); //yes
 var concat = require('gulp-concat'); //yes
-var uglify = require('gulp-uglify'); //yes
+// var uglify = require('gulp-uglify'); //yes
+var uglify = require('gulp-uglify-es').default; //yes
 var run = require("run-sequence"); //yes
 var del = require("del"); //yes
 var broSync = require("browser-sync").create();//yes
@@ -90,15 +91,19 @@ gulp.task("html", function(){
 });
 
 // собираем все файлы js в один и минифицируем
-// gulp.task('vendor', function() {
-//     return gulp.src('source/js/*.js')
-//         .pipe(concat('vendor.js'))
-//         .pipe(gulp.dest('build/js/vendor.js'))
-//         .pipe(uglify())
-//         .pipe(rename('vendor.min.js'))
-//         .pipe(gulp.dest('build/vendor.js'))
-//         .on('error', gutil.log)
-// });
+gulp.task('vendor', function() {
+    // return gulp.src('source/js/*.js')
+	return gulp.src(['source/js/delete-svg-style.js', 'source/js/main.js'])
+        .pipe(concat('vendor.js'))
+        .pipe(gulp.dest('build/js'))
+        .pipe(uglify())
+        .pipe(rename('vendor.min.js'))
+        .pipe(gulp.dest('build/js'))
+			.on("change", broSync.reload);
+        // .on('error', gutil.log)
+		// .pipe(gulp.dest("build/js"))
+			// .on("change", broSync.reload);
+});
 
 //инициируем сервер из папки билд и смотрим на изменеия less и html
 gulp.task("serve", function(){
@@ -108,6 +113,7 @@ gulp.task("serve", function(){
 
 	gulp.watch("source/less/**/*.less", gulp.series("style"));
 	gulp.watch("source/*.html", gulp.series("html"));
+	gulp.watch("source/js/*.js", gulp.series("vendor"));
 });
 
 // инициируем сервер для тестирования на мобильных устройствах
@@ -116,12 +122,12 @@ gulp.task("serve-mob", function(){
 		server: "build/",
 		tunnel:  'asalikova'
 	});
-	gulp.watch("source/less/**/*.less", ["style"]);
-	gulp.watch("source/*.html", ["html"]);
+	gulp.watch("source/less/**/*.less", gulp.series("style"));
+	gulp.watch("source/*.html", gulp.series("html"));
 });
 
 //стартуем! и запускаем последовательно таски
 
-gulp.task('build', gulp.series("clean", "copy", "images", "sprite", "style", "html", function (done) {
+gulp.task('build', gulp.series("clean", "copy", "images", "sprite", "style", "html", "vendor", function (done) {
     done();
 }));
