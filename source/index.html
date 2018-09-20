@@ -15,531 +15,536 @@
         <div style="display: none;">
 		    <include src="build/images/sprite.svg"></include>
 	    </div>
-        <header class="header">
-            <!-- кнопка меню бургер -->
-            <a href="#" aria-label="меню" class="header__button-nav">
-                <span class="header__nav-burger-line"></span>
-            </a>
-            <!-- блок с навигацией -->
-            <nav class="header__nav close">
-                <ul class="nav-items">
-                    <li class="nav-items__item nav-header">
+        <section class="left-slider-section">
+            <p>left slider section</p>
+        </section>
+        <section class="main-body-sections">
 
-                            <picture>
-    			                <img class="nav-items__userpic" src="images/userpic.jpg" srcset="images/userpic@2x.jpg 2x, images/userpic@3x.jpg 3x" alt="Мое фото">
-    		                </picture>
-                        <div class="header__nav-caption">
-                            <h3 class="header__nav-caption">Саликова Анастасия</h3>
-                            <p class="header__job-position">младший тестировщик</p>
+            <header class="header">
+                <!-- кнопка меню бургер -->
+                <a href="#" aria-label="меню" class="header__button-nav">
+                    <span class="header__nav-burger-line"></span>
+                </a>
+                <!-- блок с навигацией -->
+                <nav class="header__nav close">
+                    <ul class="nav-items">
+                        <li class="nav-items__item nav-header">
+
+                                <picture>
+        			                <img class="nav-items__userpic" src="images/userpic.jpg" srcset="images/userpic@2x.jpg 2x, images/userpic@3x.jpg 3x" alt="Мое фото">
+        		                </picture>
+                            <div class="header__nav-caption">
+                                <h3 class="header__nav-caption">Саликова Анастасия</h3>
+                                <p class="header__job-position">младший тестировщик</p>
+                            </div>
+
+                        </li>
+                        <li class="nav-items__item">
+                            <a href="tel:+7215517757" class="nav-items__link links-style nav-tel">+7-921-551-77-57</a>
+                        </li>
+                        <li class="nav-items__item underline">
+                            <a href="mailto:fotograf.anastasia@gmail.com" class="nav-items__link links-style nav-email">fotograf.anastasia@gmail.com</a>
+                        </li>
+                        <li class="nav-items__item"><a class="nav-items__link links-style" href="#main_page">главная</a></li>
+                        <li class="nav-items__item"><a class="nav-items__link links-style" href="#skills_page">ключевые навыки</a></li>
+                        <li class="nav-items__item"><a class="nav-items__link links-style" href="#tools_page">инструменты</a></li>
+                        <li class="nav-items__item"><a class="nav-items__link links-style" href="#jobs_page">опыт работы</a></li>
+                        <li class="nav-items__item"><a class="nav-items__link links-style" href="#education_page">образование</a></li>
+                        <li class="nav-items__item"><a class="nav-items__link links-style" href="#certificates_page">сертификаты</a></li>
+                        <li class="nav-items__item"><a class="nav-items__link links-style" href="#portfolio_page">портфолио</a></li>
+                        <li class="nav-items__item"><a class="nav-items__link links-style" href="#contacts_page">контакты</a></li>
+                    </ul>
+                </nav>
+                <!-- блок с главной страницы -->
+                <div class="header__main-wrap">
+                    <h1 id="main_page" class="header__caption">Саликова Анастасия<span class="header__caption-small">младший тестировщик</span></h1>
+                    <p>И это моя web версия резюме с портфолио</p>
+                    <div class="header__wrap-button-resume">
+                        <svg class="header__img-download" style="width: 11px; height: 11px">
+            			    <use xlink:href="#icon-downloading_file"></use>
+            			</svg>
+                        <a href="#" download="резюме Саликова Анастасия.pdf" class="header__link-download links-style">скачать резюме</a>
+                    </div>
+                </div>
+
+                <a href="#skills_page">
+                    <svg class="header__arrow-down" style="width: 20px; height: 20px">
+        			    <use xlink:href="#icon-arrow_down"></use>
+        			</svg>
+                </a>
+
+
+            </header>
+            <main>
+                <!-- skills -->
+                <section class="skills sections-style">
+                    <h2 id="skills_page" class="caption skills-caption">ключевые навыки</h2>
+                    <div class="skills__wrap-checkbox">
+                        <div class="skills__items">
+                            <div class="skills__wrap-caption">
+                                <input type="checkbox" name="theory" id="theory" checked>
+                                <label for="theory">Теория тестирования<span class="skills__plus" aria-label="выбрать"></span></label>
+                            </div>
+                            <div class="skills__wrap-description">
+                                <p class="skills__description">Знакома с терминологией в тестировании и основными жизненными циклами ПО. Знаю разницу между QA и QC. Могу применять теоретические знания на практике. Пример: тестирование <a href="#">тостера</a></p>
+                            </div>
                         </div>
 
-                    </li>
-                    <li class="nav-items__item">
-                        <a href="tel:+7215517757" class="nav-items__link links-style nav-tel">+7-921-551-77-57</a>
-                    </li>
-                    <li class="nav-items__item underline">
-                        <a href="mailto:fotograf.anastasia@gmail.com" class="nav-items__link links-style nav-email">fotograf.anastasia@gmail.com</a>
-                    </li>
-                    <li class="nav-items__item"><a class="nav-items__link links-style" href="#main_page">главная</a></li>
-                    <li class="nav-items__item"><a class="nav-items__link links-style" href="#skills_page">ключевые навыки</a></li>
-                    <li class="nav-items__item"><a class="nav-items__link links-style" href="#tools_page">инструменты</a></li>
-                    <li class="nav-items__item"><a class="nav-items__link links-style" href="#jobs_page">опыт работы</a></li>
-                    <li class="nav-items__item"><a class="nav-items__link links-style" href="#education_page">образование</a></li>
-                    <li class="nav-items__item"><a class="nav-items__link links-style" href="#certificates_page">сертификаты</a></li>
-                    <li class="nav-items__item"><a class="nav-items__link links-style" href="#portfolio_page">портфолио</a></li>
-                    <li class="nav-items__item"><a class="nav-items__link links-style" href="#contacts_page">контакты</a></li>
-                </ul>
-            </nav>
-            <!-- блок с главной страницы -->
-            <div class="header__main-wrap">
-                <h1 id="main_page" class="header__caption">Саликова Анастасия<span class="header__caption-small">младший тестировщик</span></h1>
-                <p>И это моя web версия резюме с портфолио</p>
-                <div class="header__wrap-button-resume">
-                    <svg class="header__img-download" style="width: 11px; height: 11px">
-        			    <use xlink:href="#icon-downloading_file"></use>
-        			</svg>
-                    <a href="#" download="резюме Саликова Анастасия.pdf" class="header__link-download links-style">скачать резюме</a>
-                </div>
+                        <div class="skills__items">
+                            <div class="skills__wrap-caption">
+                                <input type="checkbox" name="test-case" id="test-case">
+                                <label for="test-case">Документирование тестов<span class="skills__plus" aria-label="выбрать"></span></label>
+                            </div>
+                            <div class="skills__wrap-description close">
+                                <p class="skills__description">Базовые навыки составления тест-кейсов и чек листов. Применение техник тест-дизайна:</p>
+                                <ul class="close">
+                                    <li>эквивалентное разделение</li>
+                                    <li>анализ граничных значений (в том числе выявление логической и технологической границ)</li>
+                                    <li>метод попарного тестирования</li>
+                                    <li>диаграмма состояний и переходов</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="skills__items">
+                            <div class="skills__wrap-caption">
+                                <input type="checkbox" name="bug-report" id="bug-report">
+                                <label for="bug-report">Написание баг репорта<span class="skills__plus" aria-label="выбрать"></span></label>
+                            </div>
+                            <div class="skills__wrap-description close">
+                                <p class="skills__description">Имею представление о жизненном цикле дефекта. Владею базовыми навыками составления отчетов об ошибках. Не боюсь заглянуть в логи. Знаю, чем отличается серьезность и приоритет дефекта.</p>
+                            </div>
+                        </div>
+
+                        <div class="skills__items">
+                            <div class="skills__wrap-caption">
+                                <input type="checkbox" name="web-technology" id="web-technology">
+                                <label for="web-technology">Базовые знания web технологий<span class="skills__plus" aria-label="выбрать"></span></label>
+                            </div>
+                            <div class="skills__wrap-description close">
+                                <p class="skills__description">Знания html, css, javascript, достаточные для написания простого сайта-визитки. Python на уровне написания бота для telegram с функцией отправки пользователю ссылки на рандомное видео, реализованной с помощью API Яндекс.Диск. Умение составлять простые запросы SQL (join, union, group by). Знакома с понятием ООП.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- tools -->
+                <section class="tools sections-style">
+                    <h2 id="tools_page" class="tools__caption caption">инструменты</h2>
+                    <p class="tools__description">для проектирования тестов, системы контроля версий, отправки http запросов и др.</p>
+
+                    <ul class="tools__list">
+                        <li class="tools__card">
+                            <div class="tools__wrap-card-img">
+                                <div class="tools__wrap-img">
+                                    <svg class="tools__card-img" style="width: 20px; height: 20px">
+                        			    <use xlink:href="#icon-checklist"></use>
+                        			</svg>
+                                </div>
+                            </div>
+                            <div class="tools__text-blog">
+                                <h3>чек-листы</h3>
+                                <ul class="tools__text-items">
+                                    <li class="tools__text-item">Sitechko</li>
+                                    <li class="tools__text-item">Google sheets</li>
+                                    <li class="tools__text-item">Excel</li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="tools__card">
+                            <div class="tools__wrap-card-img">
+                                <div class="tools__wrap-img">
+                                    <svg class="tools__card-img" style="width: 20px; height: 20px">
+                        			    <use xlink:href="#icon-web"></use>
+                        			</svg>
+                                </div>
+                            </div>
+                            <div class="tools__text-blog">
+                                <h3>web инструменты</h3>
+                                <p class="tools__p">Chrome Dev Tools, Web Developer, PerfectPixel, Lightshot, bugmagnet, Form Filler</p>
+                            </div>
+                        </li>
+
+                        <li class="tools__card">
+                            <div class="tools__wrap-card-img">
+                                <div class="tools__wrap-img">
+                                    <svg class="tools__card-img" style="width: 20px; height: 20px">
+                        			    <use xlink:href="#icon-coding"></use>
+                        			</svg>
+                                </div>
+                            </div>
+                            <div class="tools__text-blog">
+                                <h3>командная строка</h3>
+                                <p class="tools__p">Базовые команды вконсоли bash: cd, ls, mv, rm, mkdir, grep, top, kill, apt</p>
+                            </div>
+                        </li>
+
+                        <li class="tools__card">
+                            <div class="tools__wrap-card-img">
+                                <div class="tools__wrap-img">
+                                    <svg class="tools__card-img" style="width: 20px; height: 20px">
+                        			    <use xlink:href="#icon-http"></use>
+                        			</svg>
+                                </div>
+                            </div>
+                            <div class="tools__text-blog">
+                                <h3>HTTP И API</h3>
+                                <p class="tools__p">Fiddler - отправка и модификация запросов. Postman - тестирование REST API</p>
+                            </div>
+                        </li>
+
+                        <li class="tools__card">
+                            <div class="tools__wrap-card-img">
+                                <div class="tools__wrap-img">
+                                    <svg class="tools__card-img" style="width: 20px; height: 20px">
+                        			    <use xlink:href="#icon-laptop"></use>
+                        			</svg>
+                                </div>
+                            </div>
+                            <div class="tools__text-blog">
+                                <h3>ОС, ВИРТУАЛКИ, VCS</h3>
+                                <p class="tools__p">Пользователь Windows, Linux. Git - команды status, add, commit, push, pull и др. VirtualBox.</p>
+                            </div>
+                        </li>
+                        <li class="tools__card">
+                            <div class="tools__wrap-card-img">
+                                <div class="tools__wrap-img">
+                                    <svg class="tools__card-img" style="width: 20px; height: 20px">
+                        			    <use xlink:href="#icon-bug"></use>
+                        			</svg>
+                                </div>
+                            </div>
+                            <div class="tools__text-blog">
+                                <h3>Оформление багов и отчетность</h3>
+                                <p class="tools__p">Redmine, Mantis - оформление багов. Excel, Sitechco - анализ результатов.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </section>
+
+                <!-- jobs -->
+                <section class="jobs sections-style">
+                    <h2 id="jobs_page" class="caption">опыт работы</h2>
+                    <ul class="jobs__all-items">
+                        <li class="jobs__item">
+                            <div class="jobs__wrap-dates">
+                                <p class="jobs__dates">
+                                    <small>июнь</small>
+                                    <span class="jobs__year"><small>20</small>17</span>
+                                    <span>&ndash;</span>
+                                    <small>апрель</small>
+                                    <span class="jobs__year"><small>20</small>18</span>
+                                </p>
+                            </div>
+
+                            <div class="jobs__description">
+                                <a href="https://www.uniconf.ru/" target="_blank" class="links-style jobs__link">ООО "Объединенные кондитеры"</a>
+                                <p class="jobs__position">Аналитик отдела продаж по Северо-Западному региону</p>
+                                <ul class="jobs__description-list">
+                                    <li class="jobs__list-item">Сбор и консолидация отчетности</li>
+                                    <li class="jobs__list-item">Расчет бонусных условий</li>
+                                    <li class="jobs__list-item">Подготовка презентации для ежегодного собрания</li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="jobs__item">
+                            <div class="jobs__wrap-dates">
+                                <p class="jobs__dates">
+                                    <small>октябрь</small>
+                                    <span class="jobs__year"><small>20</small>16</span>
+                                </p>
+                            </div>
+                            <div class="jobs__description">
+                                <a href="http://quality-lab.ru/education/" target="_blank" class="links-style jobs__link">"Лаборатория качества"<br>Учебный центр</a>
+                                <p class="jobs__position">Стажер-тестировщик</p>
+                                <a href="http://quality-lab.ru/education/online/testing-process/a_salikova/#ui-id-1" target="_blank" class="links-style jobs__link-style">Здесь темы, пройденные во время стажировки</a>
+                            </div>
+
+                        </li>
+                        <li class="jobs__item">
+                            <div class="jobs__wrap-dates">
+                                <p class="jobs__dates">
+                                    <small>август</small>
+                                    <span class="jobs__year"><small>20</small>16</span>
+                                </p>
+                            </div>
+                            <div class="jobs__description">
+                                <p>проект «dadata.ru» на базе курсов «интенсив для начинающих тестировщиков»</p>
+                                <p class="jobs__position">Стажер-тестировщик</p>
+                                <a href="http://testbase.ru/learn/int" target="_blank" class="links-style jobs__link-style">полная информация о стажировке</a>
+                            </div>
+                        </li>
+
+                        <li class="jobs__item">
+                            <div class="jobs__wrap-dates">
+                                <p class="jobs__dates">
+                                    <small>май</small>
+                                    <span class="jobs__year"><small>20</small>12</span>
+                                    <span>&ndash;</span>
+                                    <small>октябрь</small>
+                                    <span class="jobs__year"><small>20</small>16</span>
+                                </p>
+                            </div>
+                            <div class="jobs__description">
+                                <p><a href="http://www.bl.ru/" target="_blank" class="links-style jobs__link">ООО "Невский Синдикат"</a></p>
+                                <p class="jobs__position">Координатор-аналитик отдела продаж</p>
+                                <ul class="jobs__description-list">
+                                    <li class="jobs__list-item">Составление аналитических отчетов</li>
+                                    <li class="jobs__list-item">Расчет KPI сотрудников отдела</li>
+                                    <li class="jobs__list-item">Подготовка презентации</li>
+                                    <li class="jobs__list-item">Автоматизация отчетности</li>
+                                </ul>
+                                <!-- <p>Во время работы была удостоена грамоты за аналитический вклад в развитие отдела продаж слабоалкогольных брендов</p> -->
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- education -->
+                <section class="education sections-style">
+                    <h2 id="education_page" class="caption">образование</h2>
+                    <ul class="education__list">
+                        <li class="education__list-item">
+                            <div>
+                                <p>СПБГУКИ</p>
+                                <p>2001-2006</p>
+                                <p class="education__title-item">Библиотекарь-библиограф</p>
+                                <p>дипломная тема: «Художественное оформление современной детской книги</p>
+                            </div>
+                        </li>
+                        <li class="education__list-item">
+                            <div>
+                                <p>Учебный центр «Конто»</p>
+                                <p>февраль 2008</p>
+                                <p class="education__title-item">Бухгалтерский учет и налогообложение</p>
+                            </div>
+                        </li>
+                        <li class="education__list-item">
+                            <div>
+                                <a href="http://software-testing.ru/edu/1-schedule/231-intensive-3-weeks" target="
+                                " class="links-style education__links">software-testing</a>
+                                <p>август 2016</p>
+                                <a href="http://cert.software-testing.ru/int3/salikova.pdf" target="_blank" class="links-style education__links education__title-item">Онлайн-интенсив для начинающих тестировщиков</a>
+                            </div>
+                        </li>
+                        <li class="education__list-item">
+                            <div>
+                                <a href="http://software-testing.ru/edu/1-schedule/189-web" target="_blank" class="links-style education__links">software-testing</a>
+                                <p>октябрь 2017</p>
+                                <a href="http://cert.software-testing.ru/web/salikovaanastasia.pdf" target="_blank" class="links-style education__links education__title-item">Тестирование веб-приложений</a>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- certificates -->
+                <section class="certificates sections-style">
+                    <h2 id="certificates_page" class="caption">сертификаты</h2>
+                    <p class="certificates__description">полученные после прохождения онлайн-курсов (как платных, так и бесплатных)</p>
+                    <div class="certificates__wrap-nav">
+                        <a href="#all" class="links-style certificates__nav-item cert-active">все</a>
+                        <a href="#testing" class="links-style certificates__nav-item">тестирование</a>
+                        <a href="#programing" class="links-style certificates__nav-item">программирование</a>
+                        <a href="#linux" class="links-style certificates__nav-item">linux</a>
+                    </div>
+
+                    <div class="certificates__wrap-images">
+                        <div class="certificates__wrap-img testing">
+                            <a href="images/certificates_intensive_for_testers_full.jpg" media="min-width: 1024px">
+                                <picture>
+                                    <source media="(min-width: 1024px)" srcset="images/certificates_intensive_for_testers.jpg 1x, images/certificates_intensive_for_testers@2x.jpg 2x, images/certificates_intensive_for_testers@3x.jpg 3x">
+
+                                    <img src="images/certificates_intensive_for_testers_mobile.jpg" srcset="images/certificates_intensive_for_testers_mobile@2x.jpg 2x, images/certificates_intensive_for_testers_mobile@3x.jpg 3x" alt="сертификат интенсив тестировщиков">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="certificates__wrap-img testing">
+                            <a href="images/certificates_lk_testing_full.jpg" media="min-width: 1024px">
+                                <picture>
+                                    <source media="(min-width: 1024px)" srcset="images/certificates_lk_testing.jpg 1x, images/certificates_lk_testing@2x.jpg 2x, images/certificates_lk_testing@3x.jpg 3x">
+
+                                    <img src="images/certificates_lk_testing_mobile.jpg" srcset="images/certificates_lk_testing_mobile@2x.jpg 2x, images/certificates_lk_testing_mobile@3x.jpg 3x" alt="сертификат тестирование лаборатория качества">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="certificates__wrap-img linux">
+                            <a href="images/certificates_linux_full.jpg" media="min-width: 1024px">
+                                <picture>
+                                    <source media="(min-width: 1024px)" srcset="images/certificates_linux_pc.jpg 1x, images/certificates_linux_pc@2x.jpg 2x, images/certificates_linux_pc@3x.jpg 3x">
+
+                                    <img src="images/certificates_linux_mobile.jpg" srcset="images/certificates_linux_mobile@2x.jpg 2x, images/certificates_linux_mobile@3x.jpg 3x" alt="сертификат введение в linux">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="certificates__wrap-img programing">
+                            <a href="images/certificates_python_prog_full.jpg" media="min-width: 1024px">
+                                <picture>
+                                    <source media="(min-width: 1024px)" srcset="images/certificates_python_prog.jpg 1x, images/certificates_python_prog@2x.jpg 2x, images/certificates_python_prog@3x.jpg 3x">
+
+                                    <img src="images/certificates_python_prog_mobile.jpg" srcset="images/certificates_python_prog_mobile@2x.jpg 2x, images/certificates_python_prog_mobile@3x.jpg 3x" alt="сертификат программирование на Python">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="certificates__wrap-img programing">
+                            <a href="images/certificates_python_basic_full.jpg" media="min-width: 1024px">
+                                <picture>
+                                    <source media="(min-width: 1024px)" srcset="images/certificates_python_basic.jpg 1x, images/certificates_python_basic@2x.jpg 2x, images/certificates_python_basic@3x.jpg 3x">
+
+                                    <img src="images/certificates_python_basic_mobile.jpg" srcset="images/certificates_python_basic_mobile@2x.jpg 2x, images/certificates_python_basic_mobile@3x.jpg 3x" alt="сертификат Python: основы и применение">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="certificates__wrap-img testing">
+                            <a href="images/certificates_testing_web_full.jpg" media="min-width: 1024px">
+                                <picture>
+                                    <source media="(min-width: 1024px)" srcset="images/certificates_testing_web.jpg 1x, images/certificates_testing_web@2x.jpg 2x, images/certificates_testing_web@3x.jpg 3x">
+
+                                    <img src="images/certificates_testing_web_mobile.jpg" srcset="images/certificates_testing_web_mobile@2x.jpg 2x, images/certificates_testing_web_mobile@3x.jpg 3x" alt="сертификат тестирование веб приложений">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="certificates__wrap-img programing">
+                            <a href="images/certificates_js_basic_full.jpg" media="min-width: 1024px">
+                                <picture>
+                                    <source media="(min-width: 1024px)" srcset="images/certificates_js_basic.jpg 1x, images/certificates_js_basic@2x.jpg 2x, images/certificates_js_basic@3x.jpg 3x">
+
+                                    <img src="images/certificates_js_basic_mobile.jpg" srcset="images/certificates_js_basic_mobile@2x.jpg 2x, images/certificates_js_basic_mobile@3x.jpg 3x" alt="сертификат JavaScript для начинающих">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="certificates__wrap-img testing">
+                            <a href="images/certificates_testing_busic_full.jpg" media="min-width: 1024px">
+                                <picture>
+                                    <source media="(min-width: 1024px)" srcset="images/certificates_testing_busic.jpg 1x, images/certificates_testing_busic@2x.jpg 2x, images/certificates_testing_busic@3x.jpg 3x">
+
+                                    <img src="images/certificates_testing_busic_mobile.jpg" srcset="images/certificates_testing_busic_mobile@2x.jpg 2x, images/certificates_testing_busic_mobile@3x.jpg 3x" alt="сертификат тестирование ПО: Базовый уровень">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- upgrade progress -->
+                <section class="progress sections-style">
+
+                    <div class="progress__video-bg">
+                         <!-- width="280" height="420" -->
+                          <!-- poster="/images/poster-mobile.jpg" -->
+                        <video autoplay loop>
+                              <source src="/images/tree-seasons-optim.mp4" type="video/mp4">
+                              <source src="/images/tree-seasons-optim.webm" type="video/webm">
+                              <source src="/images/tree-seasons-optim.ogv" type="video/ogg">
+                                <img src="/images/poster-mobile.jpg" alt="здесь должно быть видео смены времени года">
+                        </video>
+                    </div>
+
+                    <div class="progress__wrap">
+                        <h2 class="visually-hidden">Достижения</h2>
+                        <div class="progress__item">
+                            <span class="progress__integer">2<sup>+</sup></span>
+                            <p class="progress__text-item">года непрерывного обучения</p>
+                        </div>
+
+                        <div class="progress__item">
+                            <span class="progress__integer">11<sup>+</sup></span>
+                            <p class="progress__text-item">законченных обучающих курсов</p>
+                        </div>
+
+                        <div class="progress__item">
+                            <span class="progress__integer">285<sup>+</sup></span>
+                            <p class="progress__text-item">решенных задач</p>
+                        </div>
+
+                        <!-- <div class="progress__item">
+                            <span class="progress__integer">2<sup>+</sup></span>
+                            <p>протестированных сайта</p>
+                        </div> -->
+
+
+                    </div>
+                </section>
+
+                <!-- portfolio -->
+                <section class="portfolio sections-style">
+                <h2 id="portfolio_page" class="caption">Портфолио</h2>
+                    <p class="portfolio__description">ссылки на чек-листы, баг репорты, отчет о тестировании</p>
+                    <ul class="portfolio__list">
+                        <li class="portfolio__item">Ссылка на чек-листы + скачать</li>
+                        <li class="portfolio__item">Ссылка на баг репорты + скачать</li>
+                        <li class="portfolio__item">Ссылка на отчет о тестировании + скачать</li>
+                    </ul>
+
+                </section>
+                <!-- contacts -->
+                <section class="contacts sections-style">
+                    <h2 id="contacts_page" class="contacts__caption caption">контакты</h2>
+                    <div class="contacts__contacts-items">
+                        <div class="contacts__location contacts__contacts-item">
+                            <p>Санкт-Петербург</p>
+                        </div>
+
+                        <div class="contacts__tel contacts__contacts-item">
+                            <a href="tel:+79215517757" class="links-style">+7 921-551-77-57</a>
+                            <a href="tel:+79218581339" class="links-style">+7 921-858-13-39</a>
+                        </div>
+
+                        <div class="contacts__email contacts__contacts-item">
+                            <a href="mailto:admin@asalikova.ru" class="links-style">admin@asalikova.ru</a>
+                            <a href="mailto:fotograf.anastasia@gmail.com" class="links-style">fotograf.anastasia@gmail.com</a>
+                        </div>
+                        <div class="contacts__skype contacts__contacts-item">
+                            <p>
+                                <a href="skype:fotograf.anastasia?chat" class="links-style">skype</a>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="contacts__form">
+                        <form class="contacts__feedbackform" action="index.html" method="post">
+                            <label for="username">Имя</label>
+                            <input type="text" id="username" name="username"placeholder="Иван">
+                            <span class="form__error close">Поле имя должно содержать не менее 2 символов</span>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                            <span class="form__error close">поле email должно быть в формате example@mail.com</span>
+                            <label for="message">Сообщение</label>
+                            <textarea name="message" id="message" placeholder="Сообщение"></textarea>
+                            <span class="form__error close">поле сообщение должно содержать не менее 2 символов и не более 5000</span>
+
+                            <div class="contacts__wrap-button">
+                                <svg class="contacts__send-icon" style="width: 12px; height: 12px">
+                                    <use xlink:href="#icon-send"></use>
+                                </svg>
+                                <button class="contacts__button" type="submit" name="submit" id="submit">отправить</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer sections-style">
+                <p>&copy; Anastasia Salikova <span class="footer__year">2018</span></p>
+            </footer>
+            <div class="popup-images-wrap" style="display:none">
+                <button type="button" name="button" aria-label="закрыть"></button>
+                <div class="popup-images"></div>
             </div>
 
-            <a href="#skills_page">
-                <svg class="header__arrow-down" style="width: 20px; height: 20px">
-    			    <use xlink:href="#icon-arrow_down"></use>
-    			</svg>
-            </a>
-
-
-        </header>
-        <main>
-            <!-- skills -->
-            <section class="skills sections-style">
-                <h2 id="skills_page" class="caption skills-caption">ключевые навыки</h2>
-                <div class="skills__wrap-checkbox">
-                    <div class="skills__items">
-                        <div class="skills__wrap-caption">
-                            <input type="checkbox" name="theory" id="theory" checked>
-                            <label for="theory">Теория тестирования<span class="skills__plus" aria-label="выбрать"></span></label>
-                        </div>
-                        <div class="skills__wrap-description">
-                            <p class="skills__description">Знакома с терминологией в тестировании и основными жизненными циклами ПО. Знаю разницу между QA и QC. Могу применять теоретические знания на практике. Пример: тестирование <a href="#">тостера</a></p>
-                        </div>
-                    </div>
-
-                    <div class="skills__items">
-                        <div class="skills__wrap-caption">
-                            <input type="checkbox" name="test-case" id="test-case">
-                            <label for="test-case">Документирование тестов<span class="skills__plus" aria-label="выбрать"></span></label>
-                        </div>
-                        <div class="skills__wrap-description close">
-                            <p class="skills__description">Базовые навыки составления тест-кейсов и чек листов. Применение техник тест-дизайна:</p>
-                            <ul class="close">
-                                <li>эквивалентное разделение</li>
-                                <li>анализ граничных значений (в том числе выявление логической и технологической границ)</li>
-                                <li>метод попарного тестирования</li>
-                                <li>диаграмма состояний и переходов</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="skills__items">
-                        <div class="skills__wrap-caption">
-                            <input type="checkbox" name="bug-report" id="bug-report">
-                            <label for="bug-report">Написание баг репорта<span class="skills__plus" aria-label="выбрать"></span></label>
-                        </div>
-                        <div class="skills__wrap-description close">
-                            <p class="skills__description">Имею представление о жизненном цикле дефекта. Владею базовыми навыками составления отчетов об ошибках. Не боюсь заглянуть в логи. Знаю, чем отличается серьезность и приоритет дефекта.</p>
-                        </div>
-                    </div>
-
-                    <div class="skills__items">
-                        <div class="skills__wrap-caption">
-                            <input type="checkbox" name="web-technology" id="web-technology">
-                            <label for="web-technology">Базовые знания web технологий<span class="skills__plus" aria-label="выбрать"></span></label>
-                        </div>
-                        <div class="skills__wrap-description close">
-                            <p class="skills__description">Знания html, css, javascript, достаточные для написания простого сайта-визитки. Python на уровне написания бота для telegram с функцией отправки пользователю ссылки на рандомное видео, реализованной с помощью API Яндекс.Диск. Умение составлять простые запросы SQL (join, union, group by). Знакома с понятием ООП.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- tools -->
-            <section class="tools sections-style">
-                <h2 id="tools_page" class="tools__caption caption">инструменты</h2>
-                <p class="tools__description">для проектирования тестов, системы контроля версий, отправки http запросов и др.</p>
-
-                <ul class="tools__list">
-                    <li class="tools__card">
-                        <div class="tools__wrap-card-img">
-                            <div class="tools__wrap-img">
-                                <svg class="tools__card-img" style="width: 20px; height: 20px">
-                    			    <use xlink:href="#icon-checklist"></use>
-                    			</svg>
-                            </div>
-                        </div>
-                        <div class="tools__text-blog">
-                            <h3>чек-листы</h3>
-                            <ul class="tools__text-items">
-                                <li class="tools__text-item">Sitechko</li>
-                                <li class="tools__text-item">Google sheets</li>
-                                <li class="tools__text-item">Excel</li>
-                            </ul>
-                        </div>
-
-                    </li>
-                    <li class="tools__card">
-                        <div class="tools__wrap-card-img">
-                            <div class="tools__wrap-img">
-                                <svg class="tools__card-img" style="width: 20px; height: 20px">
-                    			    <use xlink:href="#icon-web"></use>
-                    			</svg>
-                            </div>
-                        </div>
-                        <div class="tools__text-blog">
-                            <h3>web инструменты</h3>
-                            <p class="tools__p">Chrome Dev Tools, Web Developer, PerfectPixel, Lightshot, bugmagnet, Form Filler</p>
-                        </div>
-                    </li>
-
-                    <li class="tools__card">
-                        <div class="tools__wrap-card-img">
-                            <div class="tools__wrap-img">
-                                <svg class="tools__card-img" style="width: 20px; height: 20px">
-                    			    <use xlink:href="#icon-coding"></use>
-                    			</svg>
-                            </div>
-                        </div>
-                        <div class="tools__text-blog">
-                            <h3>командная строка</h3>
-                            <p class="tools__p">Базовые команды вконсоли bash: cd, ls, mv, rm, mkdir, grep, top, kill, apt</p>
-                        </div>
-                    </li>
-
-                    <li class="tools__card">
-                        <div class="tools__wrap-card-img">
-                            <div class="tools__wrap-img">
-                                <svg class="tools__card-img" style="width: 20px; height: 20px">
-                    			    <use xlink:href="#icon-http"></use>
-                    			</svg>
-                            </div>
-                        </div>
-                        <div class="tools__text-blog">
-                            <h3>HTTP И API</h3>
-                            <p class="tools__p">Fiddler - отправка и модификация запросов. Postman - тестирование REST API</p>
-                        </div>
-                    </li>
-
-                    <li class="tools__card">
-                        <div class="tools__wrap-card-img">
-                            <div class="tools__wrap-img">
-                                <svg class="tools__card-img" style="width: 20px; height: 20px">
-                    			    <use xlink:href="#icon-laptop"></use>
-                    			</svg>
-                            </div>
-                        </div>
-                        <div class="tools__text-blog">
-                            <h3>ОС, ВИРТУАЛКИ, VCS</h3>
-                            <p class="tools__p">Пользователь Windows, Linux. Git - команды status, add, commit, push, pull и др. VirtualBox.</p>
-                        </div>
-                    </li>
-                    <li class="tools__card">
-                        <div class="tools__wrap-card-img">
-                            <div class="tools__wrap-img">
-                                <svg class="tools__card-img" style="width: 20px; height: 20px">
-                    			    <use xlink:href="#icon-bug"></use>
-                    			</svg>
-                            </div>
-                        </div>
-                        <div class="tools__text-blog">
-                            <h3>Оформление багов и отчетность</h3>
-                            <p class="tools__p">Redmine, Mantis - оформление багов. Excel, Sitechco - анализ результатов.</p>
-                        </div>
-                    </li>
-                </ul>
-
-            </section>
-
-            <!-- jobs -->
-            <section class="jobs sections-style">
-                <h2 id="jobs_page" class="caption">опыт работы</h2>
-                <ul class="jobs__all-items">
-                    <li class="jobs__item">
-                        <div class="jobs__wrap-dates">
-                            <p class="jobs__dates">
-                                <small>июнь</small>
-                                <span class="jobs__year"><small>20</small>17</span>
-                                <span>&ndash;</span>
-                                <small>апрель</small>
-                                <span class="jobs__year"><small>20</small>18</span>
-                            </p>
-                        </div>
-
-                        <div class="jobs__description">
-                            <a href="https://www.uniconf.ru/" target="_blank" class="links-style jobs__link">ООО "Объединенные кондитеры"</a>
-                            <p class="jobs__position">Аналитик отдела продаж по Северо-Западному региону</p>
-                            <ul class="jobs__description-list">
-                                <li class="jobs__list-item">Сбор и консолидация отчетности</li>
-                                <li class="jobs__list-item">Расчет бонусных условий</li>
-                                <li class="jobs__list-item">Подготовка презентации для ежегодного собрания</li>
-                            </ul>
-                        </div>
-
-                    </li>
-                    <li class="jobs__item">
-                        <div class="jobs__wrap-dates">
-                            <p class="jobs__dates">
-                                <small>октябрь</small>
-                                <span class="jobs__year"><small>20</small>16</span>
-                            </p>
-                        </div>
-                        <div class="jobs__description">
-                            <a href="http://quality-lab.ru/education/" target="_blank" class="links-style jobs__link">"Лаборатория качества"<br>Учебный центр</a>
-                            <p class="jobs__position">Стажер-тестировщик</p>
-                            <a href="http://quality-lab.ru/education/online/testing-process/a_salikova/#ui-id-1" target="_blank" class="links-style jobs__link-style">Здесь темы, пройденные во время стажировки</a>
-                        </div>
-
-                    </li>
-                    <li class="jobs__item">
-                        <div class="jobs__wrap-dates">
-                            <p class="jobs__dates">
-                                <small>август</small>
-                                <span class="jobs__year"><small>20</small>16</span>
-                            </p>
-                        </div>
-                        <div class="jobs__description">
-                            <p>проект «dadata.ru» на базе курсов «интенсив для начинающих тестировщиков»</p>
-                            <p class="jobs__position">Стажер-тестировщик</p>
-                            <a href="http://testbase.ru/learn/int" target="_blank" class="links-style jobs__link-style">полная информация о стажировке</a>
-                        </div>
-                    </li>
-
-                    <li class="jobs__item">
-                        <div class="jobs__wrap-dates">
-                            <p class="jobs__dates">
-                                <small>май</small>
-                                <span class="jobs__year"><small>20</small>12</span>
-                                <span>&ndash;</span>
-                                <small>октябрь</small>
-                                <span class="jobs__year"><small>20</small>16</span>
-                            </p>
-                        </div>
-                        <div class="jobs__description">
-                            <p><a href="http://www.bl.ru/" target="_blank" class="links-style jobs__link">ООО "Невский Синдикат"</a></p>
-                            <p class="jobs__position">Координатор-аналитик отдела продаж</p>
-                            <ul class="jobs__description-list">
-                                <li class="jobs__list-item">Составление аналитических отчетов</li>
-                                <li class="jobs__list-item">Расчет KPI сотрудников отдела</li>
-                                <li class="jobs__list-item">Подготовка презентации</li>
-                                <li class="jobs__list-item">Автоматизация отчетности</li>
-                            </ul>
-                            <!-- <p>Во время работы была удостоена грамоты за аналитический вклад в развитие отдела продаж слабоалкогольных брендов</p> -->
-                        </div>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- education -->
-            <section class="education sections-style">
-                <h2 id="education_page" class="caption">образование</h2>
-                <ul class="education__list">
-                    <li class="education__list-item">
-                        <div>
-                            <p>СПБГУКИ</p>
-                            <p>2001-2006</p>
-                            <p class="education__title-item">Библиотекарь-библиограф</p>
-                            <p>дипломная тема: «Художественное оформление современной детской книги</p>
-                        </div>
-                    </li>
-                    <li class="education__list-item">
-                        <div>
-                            <p>Учебный центр «Конто»</p>
-                            <p>февраль 2008</p>
-                            <p class="education__title-item">Бухгалтерский учет и налогообложение</p>
-                        </div>
-                    </li>
-                    <li class="education__list-item">
-                        <div>
-                            <a href="http://software-testing.ru/edu/1-schedule/231-intensive-3-weeks" target="
-                            " class="links-style education__links">software-testing</a>
-                            <p>август 2016</p>
-                            <a href="http://cert.software-testing.ru/int3/salikova.pdf" target="_blank" class="links-style education__links education__title-item">Онлайн-интенсив для начинающих тестировщиков</a>
-                        </div>
-                    </li>
-                    <li class="education__list-item">
-                        <div>
-                            <a href="http://software-testing.ru/edu/1-schedule/189-web" target="_blank" class="links-style education__links">software-testing</a>
-                            <p>октябрь 2017</p>
-                            <a href="http://cert.software-testing.ru/web/salikovaanastasia.pdf" target="_blank" class="links-style education__links education__title-item">Тестирование веб-приложений</a>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- certificates -->
-            <section class="certificates sections-style">
-                <h2 id="certificates_page" class="caption">сертификаты</h2>
-                <p class="certificates__description">полученные после прохождения онлайн-курсов (как платных, так и бесплатных)</p>
-                <div class="certificates__wrap-nav">
-                    <a href="#all" class="links-style certificates__nav-item cert-active">все</a>
-                    <a href="#testing" class="links-style certificates__nav-item">тестирование</a>
-                    <a href="#programing" class="links-style certificates__nav-item">программирование</a>
-                    <a href="#linux" class="links-style certificates__nav-item">linux</a>
-                </div>
-
-                <div class="certificates__wrap-images">
-                    <div class="certificates__wrap-img testing">
-                        <a href="images/certificates_intensive_for_testers_full.jpg" media="min-width: 1024px">
-                            <picture>
-                                <source media="(min-width: 1024px)" srcset="images/certificates_intensive_for_testers.jpg 1x, images/certificates_intensive_for_testers@2x.jpg 2x, images/certificates_intensive_for_testers@3x.jpg 3x">
-
-                                <img src="images/certificates_intensive_for_testers_mobile.jpg" srcset="images/certificates_intensive_for_testers_mobile@2x.jpg 2x, images/certificates_intensive_for_testers_mobile@3x.jpg 3x" alt="сертификат интенсив тестировщиков">
-                            </picture>
-                        </a>
-                    </div>
-
-                    <div class="certificates__wrap-img testing">
-                        <a href="images/certificates_lk_testing_full.jpg" media="min-width: 1024px">
-                            <picture>
-                                <source media="(min-width: 1024px)" srcset="images/certificates_lk_testing.jpg 1x, images/certificates_lk_testing@2x.jpg 2x, images/certificates_lk_testing@3x.jpg 3x">
-
-                                <img src="images/certificates_lk_testing_mobile.jpg" srcset="images/certificates_lk_testing_mobile@2x.jpg 2x, images/certificates_lk_testing_mobile@3x.jpg 3x" alt="сертификат тестирование лаборатория качества">
-                            </picture>
-                        </a>
-                    </div>
-
-                    <div class="certificates__wrap-img linux">
-                        <a href="images/certificates_linux_full.jpg" media="min-width: 1024px">
-                            <picture>
-                                <source media="(min-width: 1024px)" srcset="images/certificates_linux_pc.jpg 1x, images/certificates_linux_pc@2x.jpg 2x, images/certificates_linux_pc@3x.jpg 3x">
-
-                                <img src="images/certificates_linux_mobile.jpg" srcset="images/certificates_linux_mobile@2x.jpg 2x, images/certificates_linux_mobile@3x.jpg 3x" alt="сертификат введение в linux">
-                            </picture>
-                        </a>
-                    </div>
-
-                    <div class="certificates__wrap-img programing">
-                        <a href="images/certificates_python_prog_full.jpg" media="min-width: 1024px">
-                            <picture>
-                                <source media="(min-width: 1024px)" srcset="images/certificates_python_prog.jpg 1x, images/certificates_python_prog@2x.jpg 2x, images/certificates_python_prog@3x.jpg 3x">
-
-                                <img src="images/certificates_python_prog_mobile.jpg" srcset="images/certificates_python_prog_mobile@2x.jpg 2x, images/certificates_python_prog_mobile@3x.jpg 3x" alt="сертификат программирование на Python">
-                            </picture>
-                        </a>
-                    </div>
-
-                    <div class="certificates__wrap-img programing">
-                        <a href="images/certificates_python_basic_full.jpg" media="min-width: 1024px">
-                            <picture>
-                                <source media="(min-width: 1024px)" srcset="images/certificates_python_basic.jpg 1x, images/certificates_python_basic@2x.jpg 2x, images/certificates_python_basic@3x.jpg 3x">
-
-                                <img src="images/certificates_python_basic_mobile.jpg" srcset="images/certificates_python_basic_mobile@2x.jpg 2x, images/certificates_python_basic_mobile@3x.jpg 3x" alt="сертификат Python: основы и применение">
-                            </picture>
-                        </a>
-                    </div>
-
-                    <div class="certificates__wrap-img testing">
-                        <a href="images/certificates_testing_web_full.jpg" media="min-width: 1024px">
-                            <picture>
-                                <source media="(min-width: 1024px)" srcset="images/certificates_testing_web.jpg 1x, images/certificates_testing_web@2x.jpg 2x, images/certificates_testing_web@3x.jpg 3x">
-
-                                <img src="images/certificates_testing_web_mobile.jpg" srcset="images/certificates_testing_web_mobile@2x.jpg 2x, images/certificates_testing_web_mobile@3x.jpg 3x" alt="сертификат тестирование веб приложений">
-                            </picture>
-                        </a>
-                    </div>
-
-                    <div class="certificates__wrap-img programing">
-                        <a href="images/certificates_js_basic_full.jpg" media="min-width: 1024px">
-                            <picture>
-                                <source media="(min-width: 1024px)" srcset="images/certificates_js_basic.jpg 1x, images/certificates_js_basic@2x.jpg 2x, images/certificates_js_basic@3x.jpg 3x">
-
-                                <img src="images/certificates_js_basic_mobile.jpg" srcset="images/certificates_js_basic_mobile@2x.jpg 2x, images/certificates_js_basic_mobile@3x.jpg 3x" alt="сертификат JavaScript для начинающих">
-                            </picture>
-                        </a>
-                    </div>
-
-                    <div class="certificates__wrap-img testing">
-                        <a href="images/certificates_testing_busic_full.jpg" media="min-width: 1024px">
-                            <picture>
-                                <source media="(min-width: 1024px)" srcset="images/certificates_testing_busic.jpg 1x, images/certificates_testing_busic@2x.jpg 2x, images/certificates_testing_busic@3x.jpg 3x">
-
-                                <img src="images/certificates_testing_busic_mobile.jpg" srcset="images/certificates_testing_busic_mobile@2x.jpg 2x, images/certificates_testing_busic_mobile@3x.jpg 3x" alt="сертификат тестирование ПО: Базовый уровень">
-                            </picture>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- upgrade progress -->
-            <section class="progress sections-style">
-
-                <div class="progress__video-bg">
-                     <!-- width="280" height="420" -->
-                      <!-- poster="/images/poster-mobile.jpg" -->
-                    <video autoplay loop>
-                          <source src="/images/tree-seasons-optim.mp4" type="video/mp4">
-                          <source src="/images/tree-seasons-optim.webm" type="video/webm">
-                          <source src="/images/tree-seasons-optim.ogv" type="video/ogg">
-                            <img src="/images/poster-mobile.jpg" alt="здесь должно быть видео смены времени года">
-                    </video>
-                </div>
-
-                <div class="progress__wrap">
-                    <h2 class="visually-hidden">Достижения</h2>
-                    <div class="progress__item">
-                        <span class="progress__integer">2<sup>+</sup></span>
-                        <p class="progress__text-item">года непрерывного обучения</p>
-                    </div>
-
-                    <div class="progress__item">
-                        <span class="progress__integer">11<sup>+</sup></span>
-                        <p class="progress__text-item">законченных обучающих курсов</p>
-                    </div>
-
-                    <div class="progress__item">
-                        <span class="progress__integer">285<sup>+</sup></span>
-                        <p class="progress__text-item">решенных задач</p>
-                    </div>
-
-                    <!-- <div class="progress__item">
-                        <span class="progress__integer">2<sup>+</sup></span>
-                        <p>протестированных сайта</p>
-                    </div> -->
-
-
-                </div>
-            </section>
-
-            <!-- portfolio -->
-            <section class="portfolio sections-style">
-            <h2 id="portfolio_page" class="caption">Портфолио</h2>
-                <p class="portfolio__description">ссылки на чек-листы, баг репорты, отчет о тестировании</p>
-                <ul class="portfolio__list">
-                    <li class="portfolio__item">Ссылка на чек-листы + скачать</li>
-                    <li class="portfolio__item">Ссылка на баг репорты + скачать</li>
-                    <li class="portfolio__item">Ссылка на отчет о тестировании + скачать</li>
-                </ul>
-
-            </section>
-            <!-- contacts -->
-            <section class="contacts sections-style">
-                <h2 id="contacts_page" class="contacts__caption caption">контакты</h2>
-                <div class="contacts__contacts-items">
-                    <div class="contacts__location contacts__contacts-item">
-                        <p>Санкт-Петербург</p>
-                    </div>
-
-                    <div class="contacts__tel contacts__contacts-item">
-                        <a href="tel:+79215517757" class="links-style">+7 921-551-77-57</a>
-                        <a href="tel:+79218581339" class="links-style">+7 921-858-13-39</a>
-                    </div>
-
-                    <div class="contacts__email contacts__contacts-item">
-                        <a href="mailto:admin@asalikova.ru" class="links-style">admin@asalikova.ru</a>
-                        <a href="mailto:fotograf.anastasia@gmail.com" class="links-style">fotograf.anastasia@gmail.com</a>
-                    </div>
-                    <div class="contacts__skype contacts__contacts-item">
-                        <p>
-                            <a href="skype:fotograf.anastasia?chat" class="links-style">skype</a>
-                        </p>
-
-                    </div>
-                </div>
-                <div class="contacts__form">
-                    <form class="contacts__feedbackform" action="index.html" method="post">
-                        <label for="username">Имя</label>
-                        <input type="text" id="username" name="username"placeholder="Иван">
-                        <span class="form__error close">Поле имя должно содержать не менее 2 символов</span>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="example@gmail.com">
-                        <span class="form__error close">поле email должно быть в формате example@mail.com</span>
-                        <label for="message">Сообщение</label>
-                        <textarea name="message" id="message" placeholder="Сообщение"></textarea>
-                        <span class="form__error close">поле сообщение должно содержать не менее 2 символов и не более 5000</span>
-
-                        <div class="contacts__wrap-button">
-                            <svg class="contacts__send-icon" style="width: 12px; height: 12px">
-                                <use xlink:href="#icon-send"></use>
-                            </svg>
-                            <button class="contacts__button" type="submit" name="submit" id="submit">отправить</button>
-                        </div>
-
-                    </form>
-                </div>
-            </section>
-        </main>
-        <footer class="footer sections-style">
-            <p>&copy; Anastasia Salikova <span class="footer__year">2018</span></p>
-        </footer>
-        <div class="popup-images-wrap" style="display:none">
-            <button type="button" name="button" aria-label="закрыть"></button>
-            <div class="popup-images"></div>
-        </div>
-
-        <div class="popup-form-wrap" style="display:none">
-            <button type="button" name="button" aria-label="закрыть"></button>
-            <div class="popup-form"></div>
-        </div>
-
+            <div class="popup-form-wrap" style="display:none">
+                <button type="button" name="button" aria-label="закрыть"></button>
+                <div class="popup-form"></div>
+            </div>
+        </section>
         <script src="/js/vendor.min.js"></script>
     </body>
 </html>
