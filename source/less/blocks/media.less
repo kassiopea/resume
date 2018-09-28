@@ -189,4 +189,83 @@
     .left-slider-section {
         display: block;
     }
+    .header__main-wrap {
+        padding: 30% 0;
+    }
+    .certificates__wrap-img {
+        width: 350px;
+    }
+    .certificates__wrap-nav {
+        flex-direction: row;
+        padding: 2%;
+    }
+    .certificates__nav-item {
+        margin-top: 5%;
+        margin-left: 5%;
+        &:first-child {
+            margin-left: 0;
+            margin-top: 5%;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    .sections-style {
+        margin-top: 10%;
+    }
+    .tools {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .tools__description {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .tools__list {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        padding: 0 2%;
+    }
+    .jobs {
+        padding: 0 2%;
+    }
+    .jobs__wrap-dates {
+        width: 120px;
+        height: 120px;
+    }
+    .certificates {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .certificates__wrap-images {
+        margin-top: 5%;
+    }
+    .contacts {
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 10% 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contacts__caption {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .contacts__contacts-item {
+        padding-left: 20%;
+    }
+    .footer {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+}
+
+@media(min-width: 1300px) {
+    .tools__list {
+        padding: 0 5%;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
 }
