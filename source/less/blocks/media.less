@@ -1,21 +1,35 @@
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){
-    background-image: url(../images/bg_header_nav@2x.jpg);
+    .nav-header {
+        background-image: url(../images/bg_header_nav@2x.jpg);
+    }
+    .button-prev {
+        background-image: url(../images/bg-slider-arrow-prev@2x.png);
+    }
+
 }
 
 @media
 (-webkit-min-device-pixel-ratio: 3),
 (min-resolution: 350dpi),
 (min-resolution: 3dppx){
-    background-image: url(../images/bg_header_nav@3x.jpg);
+    .nav-header {
+        background-image: url(../images/bg_header_nav@3x.jpg);
+    }
+    .button-next {
+        background-image: url(../images/bg-slider-arrow-next@3x.png);
+    }
+
 }
 
 @media(min-width: 480px) {
     .header__main-wrap {
         padding: 20% 0;
     }
-
+    .slider-wrap-js {
+        width: 420px;
+    }
     .education__list-item {
         width: 80%;
     }
@@ -52,6 +66,9 @@
     .jobs__description {
         width: 70%;
         align-self: center;
+    }
+    .slider-wrap-js {
+        width: 507px;
     }
 
     .progress__integer {
@@ -158,6 +175,13 @@
         height: 140px;
         font-size: 20px;
     }
+    .slider-wrap-js {
+        width: 660px;
+    }
+    .education__slider-item {
+        margin-left: 4%;
+        width: 44%;
+    }
     .certificates__wrap-images {
         grid-template-columns: 1fr 1fr;
     }
@@ -198,7 +222,9 @@
     .header__main-wrap {
         padding: 30% 0;
     }
-
+    .slider-wrap-js {
+        width: 594px;
+    }
     .certificates__wrap-nav {
         flex-direction: row;
         padding: 2%;
@@ -237,6 +263,18 @@
     .jobs__wrap-dates {
         width: 120px;
         height: 120px;
+    }
+    .education {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .slider-wrap-js {
+        width: 100%;
+    }
+    .education__slider-item {
+        margin-left: 4%;
+        width: 40%;
+        padding: 2%;
     }
     .certificates {
         margin-left: 2%;
@@ -289,6 +327,13 @@
 @media(min-width: 1400px) {
     .header__main-wrap {
         padding: 20% 0;
+    }
+    .slider-wrap-js {
+        max-width: 1200px;
+    }
+    .education__slider-item {
+        margin-left: 4%;
+        width: 24%;
     }
     .certificates__wrap-img {
         width: 300px;
