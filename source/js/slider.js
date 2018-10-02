@@ -1,6 +1,6 @@
 var sliderWrap = document.querySelector(".slider-wrap-js");
-var sliderList = document.querySelector(".education__slider-list");
-var sliderItems = document.querySelectorAll(".education__slider-item");
+var sliderList = document.querySelector(".work-experience__slider-list");
+var sliderItems = document.querySelectorAll(".work-experience__slider-item");
 var sliderItem = sliderItems[1];
 
 var sliderButtonPrev = document.querySelector(".button-prev");
