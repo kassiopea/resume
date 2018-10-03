@@ -257,15 +257,27 @@
         grid-row-gap: 10px;
         padding: 0 2%;
     }
-    .jobs {
-        // padding: 0 2%;
+    .education__item {
+        width: 25%;
     }
     .education__all-items {
         // flex-wrap: nowrap;
     }
     .education__wrap-dates {
-        width: 120px;
-        height: 120px;
+        width: 110px;
+        height: 110px;
+    }
+    .education__dates {
+        font-size: 16px;
+    }
+    .education__year {
+        font-size: inherit;
+    }
+    .education__description {
+         width: 100%;
+    }
+    .education__dates-line::after {
+        width: 150%;
     }
     .work-experience {
         margin-left: 2%;
@@ -316,9 +328,7 @@
         grid-column-gap: 20px;
         grid-row-gap: 20px;
     }
-    .education__item {
-        width: 25%;
-    }
+
     .certificates__wrap-images {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -349,8 +359,12 @@
     }
 }
 @media(min-width: 1600px) {
+    .education__all-items {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     .slider-wrap-js {
-        min-width: 1200px;
+        max-width: 1200px;
     }
 
 }
