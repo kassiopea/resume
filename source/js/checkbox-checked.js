@@ -6,16 +6,16 @@ var checkboxs = wrapCheckbox.getElementsByTagName("input");
 var checkboxsDescriptions = wrapCheckbox.querySelectorAll(".skills__wrap-description");
 
 
-//прослушка для всех чекбоксов
+// прослушка для всех чекбоксов
 for (let i = 0; i < checkboxs.length; i++){
     let checkbox = checkboxs[i];
     let description = checkboxsDescriptions[i];
     checkbox.addEventListener("change", function(){
         if (checkbox.checked){
-            description.classList.remove("close");
+            description.classList.add("close__checkbox-description");
         }
         else{
-            description.classList.add("close");
+            description.classList.remove("close__checkbox-description");
         };
 
     });
