@@ -93,7 +93,7 @@ gulp.task("html", function(){
 // собираем все файлы js в один и минифицируем
 gulp.task('vendor', function() {
     // return gulp.src('source/js/*.js')
-	return gulp.src(['source/js/delete-style-noJs.js', 'source/js/menu.js', 'source/js/checkbox-checked.js', 'source/js/slider.js', 'source/js/main.js'])
+	return gulp.src(['source/js/delete-style-noJs.js', 'source/js/menu.js', 'source/js/checkbox-checked.js', 'source/js/slider.js', 'source/js/selection.js', 'source/js/main.js'])
         .pipe(concat('vendor.js'))
         .pipe(gulp.dest('build/js'))
         .pipe(uglify())
