@@ -9,31 +9,6 @@ function closeBlockImg (item) {
 function openBlockImg (item) {
     allCertificatesImg[item].classList.remove("certificates__closed");
 }
-//
-// function animationElem (hashElem) {
-//     if (hashElem == "all") {
-//         for (let i = 0; i < allCertificatesImg.length; i++) {
-//             allCertificatesImg[i].classList.remove("certificates__visuallyhidden");
-//             allCertificatesImg[i].classList.add("certificates__visible");
-//             setTimeout(openBlockImg, 500, i);
-//         }
-//     }
-//     else {
-//         for (let i = 0; i < allCertificatesImg.length; i++) {
-//             if(allCertificatesImg[i].classList.contains(hashElem)) {
-//                 allCertificatesImg[i].classList.remove("certificates__visuallyhidden");
-//                 allCertificatesImg[i].classList.add("certificates__visible");
-//                 setTimeout(openBlockImg, 500, i);
-//             }
-//             else {
-//                 allCertificatesImg[i].classList.remove("certificates__visible");
-//                 allCertificatesImg[i].classList.add("certificates__visuallyhidden");
-//                 setTimeout(closeBlockImg, 500, i);
-//             }
-//         }
-//     }
-// }
-//
 
 function blockHidden () {
     wrapCertificatesImg.classList.remove("certificates__visible");
@@ -80,12 +55,7 @@ for (let i = 0; i < allCertificatesButton.length; i++){
         let hashElem = (allCertificatesButton[i].hash).substring(1);
         addClassActive(i);
         blockHidden();
-        // setTimeout(blockHidden, 200);
-        // animationElem(hashElem);
-        // setTimeout(animationElem, 500, hashElem);
-
         setTimeout(animationElem, 1000, hashElem);
         setTimeout(blockVisible, 1000);
-        // animationElem(hashElem);
     });
 }
