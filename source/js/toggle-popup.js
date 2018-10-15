@@ -12,16 +12,31 @@ var popupOverlay = document.querySelector(".popup-overlay");
 var certificatesLinks = document.querySelectorAll(".certificates__link-img");
 //картинка сертификат
 var Img = document.querySelectorAll(".certificates__img");
+//ссылка в всплывающем окне на описание курса
+var linkToCourse = document.querySelector(".popup__link-to-courses");
 //кнопка закрыть всплывающее окно
 var buttonClosePopup = document.querySelector(".popup__button");
 //экран ретина
 var retina = window.devicePixelRatio;
-//путь к фото и разрешение (ритина или нет)
+//путь к фото, описанию курса и разрешение (ритина или нет)
 var srcImg,
-    endSrcImg;
+    endSrcImg,
+    urlToCourse;
 
 var esc_keycode = 27;
 
+
+//объект для ссылок на курсы
+var linksToCourses = {
+  "/images/certificates_intensive_for_testers_full.jpg": "http://software-testing.ru/edu/1-schedule/231-intensive-3-weeks",
+  "/images/certificates_lk_testing_full.jpg": "http://quality-lab.ru/education/online/testing-process/a_salikova/#20164",
+  "/images/certificates_linux_full.jpg": "https://stepik.org/course/73/syllabus",
+  "/images/certificates_python_prog_full.jpg": "https://stepik.org/course/67/syllabus",
+  "/images/certificates_python_basic_full.jpg": "https://stepik.org/course/512/syllabus",
+  "/images/certificates_testing_web_full.jpg": "http://software-testing.ru/edu/1-schedule/189-web",
+  "/images/certificates_js_basic_full.jpg": "https://stepik.org/course/2223/syllabus",
+  "/images/certificates_testing_busic_full.jpg": "https://stepik.org/course/16478/syllabus"
+}
 
 //определение разрешения картинки
 switch(retina) {
@@ -71,6 +86,25 @@ var closeMenu = function () {
     document.removeEventListener("keydown", pressEscPopup);
 };
 
+//функция поиска ссылки на описание курса
+function getUrltoCourses (elem) {
+    let cert = elem.pathname;
+    for(var key in linksToCourses) {
+        if (cert === key) {
+            urlToCourse = linksToCourses[key];
+        }
+    }
+    return urlToCourse;
+}
+
+//функция добавления href ссылки на описание курса
+function addHrefForLink(urlToCourse){
+    linkToCourse.href = urlToCourse;
+}
+//функция удаления href ссылки на описание курса
+function removeHrefForLink () {
+    linkToCourse.href = "";
+}
 //функция открытия всплывающего окна
 var openCertificatesPopup = function () {
     popup.classList.remove("close");
@@ -81,17 +115,20 @@ var openCertificatesPopup = function () {
     popup.firstChild.classList.add("popup__img");
 
     document.addEventListener("keydown", pressEscPopup);
+    addHrefForLink(urlToCourse);
 }
 //функция закрытия всплывающего окна
 var closeCertificatesPopup = function () {
     popup.firstChild.classList.remove("popup__img");
-    popupOverlay.classList.add("popup-overlay-img");
+    popupOverlay.classList.remove("popup-overlay-img");
     body.classList.remove("body__menu-opened");
     popup.classList.add("close");
     popupOverlay.classList.add("close");
 
     document.removeEventListener("keydown", pressEscPopup);
     popup.removeChild(popup.firstChild);
+    removeHrefForLink();
+    urlToCourse = "";
 }
 
 //создание и добавление блока с изображением
@@ -115,6 +152,8 @@ function getFirstUrlElem (elem){
         }
         return srcImg;
 }
+
+
 //прослушка клика по кнопке бургер меню
 menuLink.addEventListener ("click", function(e){
     e.preventDefault();
@@ -147,6 +186,8 @@ for(let i = 0; i < certificatesLinks.length; i++) {
         e.preventDefault();
 
         getHtmlElement(getFirstUrlElem(this));
+        getUrltoCourses(this);
+        console.log(getUrltoCourses(this));
         openCertificatesPopup();
     });
 }
