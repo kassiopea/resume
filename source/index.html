@@ -580,9 +580,13 @@
                          <!-- width="280" height="420" -->
                           <!-- poster="/images/poster-mobile.jpg" -->
                         <video autoplay loop>
-                              <source src="/images/tree-seasons-optim.mp4" type="video/mp4">
-                              <source src="/images/tree-seasons-optim.webm" type="video/webm">
-                              <source src="/images/tree-seasons-optim.ogv" type="video/ogg">
+                              <source src="/images/tree-seasons-optim.mp4" type="video/mp4" media="(max-width: 767px)">
+                              <source src="/images/tree-seasons-optim.webm" type="video/webm" media="(max-width: 767px)">
+                              <source src="/images/tree-seasons-optim.ogv" type="video/ogg" media="(max-width: 767px)">
+
+                              <source src="/images/tree_seasons_full_compression.mp4" type="video/mp4" media="(min-width: 768px)">
+                              <source src="/images/tree_seasons_full_compression.webm" type="video/webm" media="(min-width: 768px)">
+                              <source src="/images/tree_seasons_full_compression.ogv" type="video/ogg" media="(min-width: 768px)">
                                 <img src="/images/poster-mobile.jpg" alt="здесь должно быть видео смены времени года">
                         </video>
                     </div>
@@ -615,7 +619,7 @@
 
                 <!-- portfolio -->
                 <section class="portfolio sections-style">
-                <h2 id="portfolio_page" class="caption">Портфолио</h2>
+                    <h2 id="portfolio_page" class="caption">Портфолио</h2>
                     <p class="portfolio__description">ссылки на чек-листы, баг репорты, отчет о тестировании</p>
                     <ul class="portfolio__list">
                         <li class="portfolio__item">Ссылка на чек-листы + скачать</li>
