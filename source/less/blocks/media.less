@@ -185,11 +185,21 @@
     .certificates__wrap-images {
         grid-template-columns: 1fr 1fr;
     }
+    .progress__wrap {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding-top: 6%;
+    }
+    .progress__item {
+        width: 200px;
+        margin: 0;
+    }
     .progress__integer {
-        font-size: 48px;
+        font-size: 20px;
     }
     .progress__text-item {
-        font-size: 24px;
+        font-size: 16px;
     }
     .contacts__contacts-item {
         padding-left: 14%;
@@ -313,6 +323,10 @@
     //     width: 30px;
     //     height: 30px;
     // }
+
+    .progress__item {
+        width: 260px;
+    }
     .contacts {
         margin-left: 2%;
         margin-right: 2%;
@@ -366,6 +380,16 @@
     .certificates__wrap-img {
         width: 300px;
     }
+    .progress__item {
+        width: 380px;
+        // margin-left: 40px;
+    }
+    .progress__integer {
+        font-size: 40px;
+    }
+    .progress__text-item {
+        font-size: 24px;
+    }
 }
 
 @media(min-width: 1500px) {
@@ -398,6 +422,9 @@
         grid-template-columns: repeat(3, minmax(min-content, 500px));
         // grid-gap: 100px;
     }
+    .progress__item {
+        width: 500px;
+    }
 }
 @media(min-width: 2048px){
     body {
@@ -414,5 +441,11 @@
     .header__nav {
         width: 25%;
         max-width: 600px;
+    }
+    .progress {
+        padding-right: 2%;
+    }
+    .progress__wrap {
+        margin-right: 2%;
     }
 }
