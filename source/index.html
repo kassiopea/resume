@@ -652,20 +652,29 @@
                         <form class="contacts__feedbackform" action="index.html" method="post">
                             <label for="username">Имя</label>
                             <input type="text" id="username" name="username"placeholder="Иван">
-                            <span class="form__error close">Поле имя должно содержать не менее 2 символов</span>
+                            <!-- <span class="form__error name-error close--error close">Поле имя должно содержать не менее 2 символов</span> -->
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" placeholder="example@gmail.com">
-                            <span class="form__error close">поле email должно быть в формате example@mail.com</span>
+                            <!-- <span class="form__error email-error close--error close">поле email должно быть в формате example@mail.com</span> -->
                             <label for="message">Сообщение</label>
                             <textarea name="message" id="message" placeholder="Сообщение"></textarea>
-                            <span class="form__error close">поле сообщение должно содержать не менее 2 символов и не более 5000</span>
+                            <!-- <span class="form__error message-error close--error close">поле сообщение должно содержать не менее 2 символов и не более 5000</span> -->
 
-                            <div class="contacts__wrap-button">
+                            <!-- <div class="contacts__wrap-button">
                                 <svg class="contacts__send-icon" style="width: 12px; height: 12px">
                                     <use xlink:href="#icon-send"></use>
                                 </svg>
                                 <button class="contacts__button" type="submit" name="submit" id="submit">отправить</button>
-                            </div>
+                            </div> -->
+
+
+                            <button class="contacts__button" type="submit" name="submit" id="submit">
+                                <svg class="contacts__send-icon" style="width: 12px; height: 12px">
+                                    <use xlink:href="#icon-send"></use>
+                                </svg>
+                                отправить
+                            </button>
+
 
                         </form>
                     </div>
