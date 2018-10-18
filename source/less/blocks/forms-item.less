@@ -22,12 +22,47 @@
     color: #b3b3b3;
 }
 
-.form__error {
+
+.close--error {
     font-size: 10px;
     padding-left: 4px;
     color: @main-link-hover;
+    opacity: 0;
+    transform: translateX(-3%);
+    transition: 1s;
 }
-.contacts__wrap-button {
+// .contacts__wrap-button {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     align-self: center;
+//     width: 150px;
+//     height: 40px;
+//     margin-top: 10%;
+//     border: 1px solid @black-color;
+//     transition: 0.6s;
+//     &:hover:not([disabled]) {
+//         background-color: @black-color;
+//     }
+//     &:hover:not([disabled]) .contacts__button {
+//         color: @white-color;
+//     }
+//     &:hover:not([disabled]) .contacts__send-icon {
+//         fill: white;
+//     }
+// }
+
+.contacts__send-icon {
+    width: 12px;
+    height: 12px;
+    transition: 0.6s;
+    margin-right: 8px;
+}
+.contacts__button {
+    font-size: 11px;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,25 +71,17 @@
     height: 40px;
     margin-top: 10%;
     border: 1px solid @black-color;
-    &:hover {
+    transition: 0.6s;
+    &:hover:not([disabled]){
+        color: @white-color;
         background-color: @black-color;
     }
-    &:hover .contacts__button {
-        color: @white-color;
-    }
-    &:hover .contacts__send-icon {
-        fill: white;
+    &:hover:not([disabled]) .contacts__send-icon {
+        fill: @white-color;
     }
 }
 
-.contacts__send-icon {
-    width: 12px;
-    height: 12px;
-    transition: 0.6s;
-}
-.contacts__button {
-    font-size: 11px;
-    text-transform: uppercase;
-    border: none;
-    background-color: transparent;
+.contacts__button:disabled {
+    opacity: 0.4;
+    background-color: @black-color;
 }
