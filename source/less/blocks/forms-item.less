@@ -31,27 +31,6 @@
     transform: translateX(-3%);
     transition: 1s;
 }
-// .contacts__wrap-button {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     align-self: center;
-//     width: 150px;
-//     height: 40px;
-//     margin-top: 10%;
-//     border: 1px solid @black-color;
-//     transition: 0.6s;
-//     &:hover:not([disabled]) {
-//         background-color: @black-color;
-//     }
-//     &:hover:not([disabled]) .contacts__button {
-//         color: @white-color;
-//     }
-//     &:hover:not([disabled]) .contacts__send-icon {
-//         fill: white;
-//     }
-// }
-
 .contacts__send-icon {
     width: 12px;
     height: 12px;
@@ -69,7 +48,7 @@
     align-self: center;
     width: 150px;
     height: 40px;
-    margin-top: 10%;
+    margin-top: 5%;
     border: 1px solid @black-color;
     transition: 0.6s;
     &:hover:not([disabled]){
@@ -84,4 +63,43 @@
 .contacts__button:disabled {
     opacity: 0.4;
     background-color: @black-color;
+}
+
+.popup-server-message {
+    position: fixed;
+    width: 60%;
+    max-width: 360px;
+    // height: 20%;
+    // max-height: 200px;
+    background-color: @black-color;
+    color: @white-color;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    opacity: 0;
+    transition: 0.6s;
+}
+.popup-server-message--animate {
+    opacity: 1;
+    transition: 0.6s;
+}
+.popup__button--server-Message {
+    text-indent: -9999px;
+    top: -15px;
+    right: -15px;
+    color: @white-color;
+    background: @black-color;
+    border: 1px solid @black-color;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    &::before, &::after {
+        background-color: @white-color;
+    }
+    &:hover {
+        color: @white-color;
+        background-color: @black-color;
+        &::before, &::after {
+            background-color: @white-color;
+        }
+    }
 }
