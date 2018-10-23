@@ -28,8 +28,8 @@ gulp.task("clean", function(){
 gulp.task("copy", function(){
 	return gulp.src([
 		"source/fonts/**/*.{woff,woff2,ttf,svg}",
-		"source/images/**"
-		// "source/js/**"
+		"source/images/**",
+		"source/*.php"
 	], {
 		base: "source"
 	})
@@ -114,6 +114,7 @@ gulp.task("serve", function(){
 	gulp.watch("source/less/**/*.less", gulp.series("style"));
 	gulp.watch("source/*.html", gulp.series("html"));
 	gulp.watch("source/js/*.js", gulp.series("vendor"));
+	gulp.watch("source/*.php");
 });
 
 // инициируем сервер для тестирования на мобильных устройствах
