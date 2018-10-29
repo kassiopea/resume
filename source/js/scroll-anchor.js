@@ -21,7 +21,7 @@ for (var i = 0; i < linkNav.length; i++) {
             if (start === null) start = time;
             var progress = time - start,
                 r = (indentFromTopToElem < 0 ? Math.max(startPoint - progress/V, startPoint + indentFromTopToElem) : Math.min(startPoint + progress/V, startPoint + indentFromTopToElem));
-            window.scrollTo(0,r);
+            window.scrollTo(0 ,r);
             if (r != startPoint + indentFromTopToElem) {
                 requestAnimationFrame(step);
             } else {
