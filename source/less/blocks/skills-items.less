@@ -6,11 +6,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 0;
+    // padding: 2% 0;
+    padding-bottom: 2%;
+    padding-top: 2%;
     padding-left: 10px;
     font-weight: 700;
+    // border-bottom: 1px solid @grey-border;
 }
-
+input:checked + label {
+    border-bottom: 1px solid @grey-border;
+}
 .skills__plus {
     position: relative;
     width: 18px;
