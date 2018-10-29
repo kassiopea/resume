@@ -14,11 +14,11 @@ var transformPersent,
     posEndX;
 
 var getWidth = function (){
-    let sliderStyle = getComputedStyle(sliderItem);
-    let sliderMarginLeftRaw = sliderStyle.marginLeft;
-    let sliderMarginLeft = Number(sliderMarginLeftRaw.substring(0, sliderMarginLeftRaw.length - 2));
-    let sliderWidth = sliderItem.offsetWidth;
-    let sliderListWidth = sliderList.offsetWidth;
+    var sliderStyle = getComputedStyle(sliderItem);
+    var sliderMarginLeftRaw = sliderStyle.marginLeft;
+    var sliderMarginLeft = Number(sliderMarginLeftRaw.substring(0, sliderMarginLeftRaw.length - 2));
+    var sliderWidth = sliderItem.offsetWidth;
+    var sliderListWidth = sliderList.offsetWidth;
 
     transformPersent = Math.round(((sliderWidth + sliderMarginLeft)/sliderListWidth)*100);
     maxWidthTransform = transformPersent * countSlidesItem;
