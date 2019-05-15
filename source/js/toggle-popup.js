@@ -35,7 +35,11 @@ var linksToCourses = {
   "/images/certificates_python_basic_full.jpg": "https://stepik.org/course/512/syllabus",
   "/images/certificates_testing_web_full.jpg": "http://software-testing.ru/edu/1-schedule/189-web",
   "/images/certificates_js_basic_full.jpg": "https://stepik.org/course/2223/syllabus",
-  "/images/certificates_testing_busic_full.jpg": "https://stepik.org/course/16478/syllabus"
+  "/images/certificates_testing_busic_full.jpg": "https://stepik.org/course/16478/syllabus",
+  "/images/certificates_DB_full.jpg": "https://stepik.org/course/551/syllabus",
+  "/images/certificates_Jira_full.jpg": "https://stepik.org/course/10425/syllabus",
+  "/images/certificates_security_full.jpg": "https://stepik.org/course/127/syllabus",
+  "/images/certificates_web_tech_full.jpg": "https://stepik.org/course/154/syllabus"
 }
 
 //определение разрешения картинки
